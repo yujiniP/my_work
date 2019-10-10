@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./include/sub_head_meta.html')
+
+<!-- 서브페이지에는 sub 클래스가 추가됩니다. -->
+<body class="sub">
+
+	<div class="skip-content">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- end of skip-content -->
+
+	<div class="wrap">
+		@@include('./include/header.html')
+
+		<div id="container" class="container">
+
+			<div class="wrap_path_menu">
+				<div class="inner">
+					<a href="/" class="btn_link_home"><i class="icon_go_home">home</i></a>
+					<ol class="lst_menu">
+
+						<!-- 메뉴 활성화 클래스 active -->
+						<li class="">
+							<dl>
+								<dt><button type="button">인재채용</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">회사소개</a></li>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li><a href="#;">생산제품</a></li>
+										<li><a href="#;">지속가능성</a></li>
+										<li class="current_page"><a href="#;">인재채용</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">회사 생활</button></dt>
+								<dd>
+									<ul>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li><a href="#;">회사 생활</a></li>
+										<li><a href="#;">입사지원 가이드</a></li>
+										<li class="current_page"><a href="#;">채용 정보</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">직무 소개</button></dt>
+								<dd>
+									<ul>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li class="current_page"><a href="#;">직무 소개</a></li>
+										<li><a href="#;">인사제도 및 복리후생</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- end of wrap_path_menu -->
+
+			<!-- 배경이미지 : 해당 페이지의 경우에는 apply 클래스가 추가됩니다. -->
+			<div class="wrap_sub_top apply">
+				<div class="visual table">
+					<div class="row tit_area">
+						<div class="cell">
+							<h3 class="tit_kr">회사생활</h3>
+							<p class="tit_eng">working ulsan aluminum</p>
+						</div>
+					</div>
+					<!-- end of tit_area -->
+
+					<!-- 메뉴가 없을 경우 menu_area 삭제 -->
+					<div class="row menu_area">
+						<div class="cell">
+							<dl>
+								<dt class="btn_mob_tit">
+									<!--
+										현재 페이지 제목이 들어옵니다.
+										해당 버튼은 모바일에서만 노출되며
+										클릭시 하위 메뉴가 열리는 형식입니다.
+									 -->
+									<button type="button" class="btn_m_3depth">입사지원가이드</button>
+								</dt>
+								<dd>
+									<!-- 메뉴 갯수에 따라 클래스가 다릅니다.
+									[ len + 메뉴 갯수 ]
+									 -->
+									<ul class="lst_menu len_2">
+
+										<!-- 현재 페이지 메뉴 일 경우 current_page 클래스가 추가됩니다. -->
+										<li><a href="#;" class="current_page">전형 절차</a></li>
+										<li><a href="#;">지원 방법</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- end of menu_area -->
+
+				</div>
+				<!-- end of visual -->
+
+			</div>
+			<!-- end of wrap_sub_top -->
+
+			<section class="contents">
+
+				<!-- 컨텐츠 최상위 제목 -->
+				<h1 class="tit">전형 절차</h1>
+
+				<div class="ct_apply_process">
+
+					<div class="bx_grid_type_desc table">
+						<div class="row">
+							<div class="cell cell_label">일반직 신입 (인턴)</div>
+							<div class="cell cell_cont">
+								<p>울산알루미늄은 열정 넘치는 대졸 신입사원을 선발하기 위해 인턴십 프로그램을 운영하고 있습니다.  인턴십을 통해 회사에 대한 이해도를 넓히고 직무관련 경험을 쌓을 기회를 가져 보세요.</p>
+								<dl class="bx_process">
+									<dt>채용 시기</dt>
+									<dd>하계 (7월-8월), 동계 (12-2월)</dd>
+									<dt>채용 절차</dt>
+									<dd class="step">
+										<ol class="lst_process">
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">서류 전형</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">사전 인터뷰</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">인적성 검사<br />
+														및 실무진 면접 </p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">임원 면접</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">건강검진</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">인턴십</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">최종 입사</p>
+													</div>
+												</div>
+											</li>
+										</ol>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="row">
+							<div class="cell cell_label">일반직 경력</div>
+							<div class="cell cell_cont">
+								<p>울산알루미늄은 전문 지식과 관련 경험을 겸비한 경력직 사원을 기다리고 있습니다. </p>
+								<dl class="bx_process">
+									<dt>채용 시기</dt>
+									<dd>수시</dd>
+									<dt>채용 절차</dt>
+									<dd class="step step5">
+										<ol class="lst_process">
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">서류 전형</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">실무진 면접</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">임원 면접</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">건강검진</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">최종 입사</p>
+													</div>
+												</div>
+											</li>
+										</ol>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="row">
+							<div class="cell cell_label">기능직 신입</div>
+							<div class="cell cell_cont">
+								<p>울산알루미늄은 탁월한 기술을 바탕으로 생산 현장의 최전선에서 활약하고 회사의 발전에 기여할 기능직 사원을 기다리고 있습니다.</p>
+								<dl class="bx_process">
+									<dt>채용 시기</dt>
+									<dd>수시</dd>
+									<dt>채용 절차</dt>
+									<dd class="step">
+										<ol class="lst_process">
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">서류 전형</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">인적성 검사</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">작문 능력 평가<br />및 실무진 면접</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">임원 면접</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">건강검진</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">시용 사원</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="in table">
+													<div class="row">
+														<p class="cell">최종 입사</p>
+													</div>
+												</div>
+											</li>
+										</ol>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- end of ct_apply_process -->
+
+			</section>
+			<!-- end of contents -->
+
+		</div>
+		<!-- end of container -->
+
+		@@include('./include/footer.html')
+	</div>
+	<!-- end of wrap -->
+
+</body>
+</html>

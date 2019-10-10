@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+
+@media print{
+
+	@page{
+		margin:1cm;
+	}
+
+   body{
+   	padding:40px 0;
+   	background: none;
+		color: black;
+   }
+
+	// 채용 지원 양식 인쇄하기
+	.ct_print_view{
+		.bx_pt_top{
+			margin-bottom:1cm;
+			.btns{
+				display: none;
+			}
+		}
+		.tb_default_lst_v2{
+			margin-top:0.5cm;
+			margin-bottom:0.5cm;
+			.cell{
+				padding:10px;
+				margin:0;
+				text-align: left;
+				font-size:16px;
+				line-height: 26px;
+			}
+			.cell_w_name{
+				width:140px;
+				padding:10px 10px 10px 30px;
+			}
+		}
+		.txt_my_story{
+			dt{
+				font-weight: bold;
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+
+
+}

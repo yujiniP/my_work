@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./include/sub_head_meta.html')
+
+<!-- 서브페이지에는 sub 클래스가 추가됩니다. -->
+<body class="sub">
+
+	<div class="skip-content">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- end of skip-content -->
+
+	<div class="wrap">
+		@@include('./include/header.html')
+
+		<div id="container" class="container">
+
+			<div class="wrap_path_menu">
+				<div class="inner">
+					<a href="/" class="btn_link_home"><i class="icon_go_home">home</i></a>
+					<ol class="lst_menu">
+
+						<!-- 메뉴 활성화 클래스 active -->
+						<li class="">
+							<dl>
+								<dt><button type="button">생산제품</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">회사소개</a></li>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li class="current_page"><a href="#;">생산제품</a></li>
+										<li><a href="#;">지속가능성</a></li>
+										<li><a href="#;">인재채용</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">생산공정</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">알루미늄 압연</a></li>
+										<li class="current_page"><a href="#;">생산공정</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">주조</button></dt>
+								<dd>
+									<ul>
+										<li class="current_page"><a href="#;">주조</a></li>
+										<li><a href="#;">열연</a></li>
+										<li><a href="#;">냉연</a></li>
+										<li><a href="#;">제품</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- end of wrap_path_menu -->
+
+			<!-- 배경이미지 : 해당 페이지의 경우에는 sustain 클래스가 추가됩니다. -->
+			<div class="wrap_sub_top sustain">
+				<div class="visual table">
+					<div class="row tit_area">
+						<div class="cell">
+							<h3 class="tit_kr">지속가능 경영</h3>
+							<p class="tit_eng">SUSTAINABILITY</p>
+						</div>
+					</div>
+					<!-- end of tit_area -->
+
+					<!-- 메뉴가 없을 경우 menu_area 삭제 -->
+					<div class="row menu_area">
+						<div class="cell">
+							<dl>
+								<dt class="btn_mob_tit">
+									<!--
+										현재 페이지 제목이 들어옵니다.
+										해당 버튼은 모바일에서만 노출되며
+										클릭시 하위 메뉴가 열리는 형식입니다.
+									 -->
+									<button type="button" class="btn_m_3depth">지속가능 경영</button>
+								</dt>
+								<dd>
+									<!-- 메뉴 갯수에 따라 클래스가 다릅니다.
+									[ len + 메뉴 갯수 ]
+									 -->
+									<ul class="lst_menu len_5">
+
+										<!-- 현재 페이지 메뉴 일 경우 current_page 클래스가 추가됩니다. -->
+										<li><a href="#;" class="current_page">지속가능 경영</a></li>
+										<li><a href="#;">E∙H∙S</a></li>
+										<li><a href="#;">윤리경영</a></li>
+										<li><a href="#;">기술∙품질 경영</a></li>
+										<li><a href="#;">사회공헌</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- end of menu_area -->
+
+				</div>
+				<!-- end of visual -->
+
+			</div>
+			<!-- end of wrap_sub_top -->
+
+			<section class="contents cont_wide">
+
+				<!-- 컨텐츠 최상위 제목 -->
+				<h1 class="tit">지속가능 경영</h1>
+
+				<div class="ct_sustain">
+					<div class="cont_wide_inner_center">
+
+
+						<h2 class="tit_sustain">
+							우리의 목적,<br />무한한 가능성으로 모두와 함께 성장하는 미래를 만듭니다.
+						</h2>
+
+						<div class="wrap_sustain_info">
+							<div class="bx_sustain_info table">
+								<div class="row">
+									<div class="cell green">
+										<div class="in">
+											<strong class="title">미래를 함께하는 친환경 기업</strong>
+											<span class="img_txt">Green Company for the Future</span>
+											<p class="desc">울산알루미늄은 무한한 가능성으로 성장하는  미래를 만들어 나갈 것입니다.</p>
+										</div>
+									</div>
+									<div class="cell global">
+										<div class="in">
+											<strong class="title">새롭게 도약하는 글로벌 기업</strong>
+											<span class="img_txt">New Global Company</span>
+											<p class="desc">새로운 울산알루미늄은 끊임없는 도전으로  지속적인 성장을 위해 달려왔습니다.</p>
+										</div>
+									</div>
+									<div class="cell best">
+										<div class="in">
+											<strong class="title">직원을 먼저 생각하는 안전한 기업</strong>
+											<span class="img_txt">The best value is  employee safety</span>
+											<p class="desc">안전은 어떠한 조건과도 타협활 수 없는 최대 가치, 언제나 직원과 사회 안전을 위해 최선을 다합니다.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- end of cont_wide_inner_center -->
+
+					<div class="bx_sustain_infograph">
+						<span class="img_graph"><img src="./images/img_sustain_infograph.png" alt=""></span>
+					</div>
+					<!-- end of bx_sustain_infograph -->
+
+					<div class="cont_wide_inner_center">
+
+						<div class="bx_grid_type_desc table">
+							<div class="row">
+								<div class="cell cell_label">제품</div>
+								<div class="cell cell_cont">알루미늄은 무한히 재활용할 수 있는 원소로서 그 생명력을 유지합니다. 울산알루미늄은 재활용 가능한 경량 알루미늄 공급업체로서 고객들의 신뢰를 받고 있습니다. </div>
+							</div>
+							<div class="row">
+								<div class="cell cell_label">직원</div>
+								<div class="cell cell_cont">울산알루미늄은 여러 세대에 걸쳐 인재를 채용합니다. 직원들이 장기적으로 경력 개발을 이어갈 수 있을 뿐만 아니라 그들의 자녀들도 일할 수 있는 직장입니다.</div>
+							</div>
+							<div class="row">
+								<div class="cell cell_label">사업</div>
+								<div class="cell cell_cont">울산알루미늄의 사업은 지속가능성으로 인한 효율성 덕분에 성장하고 있습니다. 고갈되는 자원에 의존하거나 부정적인 외부 영향을 초래하는 산업에 참여 하지 않기 때문에 울산알루미늄의 사업은 미래에도 지속될 수 있습니다.</div>
+							</div>
+							<div class="row">
+								<div class="cell cell_label">지역 사회</div>
+								<div class="cell cell_cont">울산알루미늄은 다양한 사회 활동을 통해 사업장이 위치한 도시와 지역 사회 전반에 투자하고 있습니다. 이러한 노력을 통해 성장 가능한 지역 사회를 지원합니다.</div>
+							</div>
+							<div class="row">
+								<div class="cell cell_label">세계</div>
+								<div class="cell cell_cont">울산알루미늄은 제품, 직원, 사업, 지역 사회 투자를 통해 더 나은 세상을 만들어가고 있습니다. 오염을 줄이고, 한정된 천연 자원에 대한 의존도를 낮추고, 사회경제적 유동성을 촉진함으로써 지속가능한 세상을 만드는 데 일조하고 있습니다. </div>
+							</div>
+						</div>
+
+					</div>
+					<!-- end of cont_wide_inner_center -->
+
+				</div>
+				<!-- end of ct_sustain -->
+
+			</section>
+			<!-- end of contents -->
+
+		</div>
+		<!-- end of container -->
+
+		@@include('./include/footer.html')
+	</div>
+	<!-- end of wrap -->
+
+</body>
+</html>

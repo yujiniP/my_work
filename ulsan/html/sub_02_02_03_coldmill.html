@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./include/sub_head_meta.html')
+
+<!-- 서브페이지에는 sub 클래스가 추가됩니다. -->
+<body class="sub">
+
+	<div class="skip-content">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- end of skip-content -->
+
+	<div class="wrap">
+		@@include('./include/header.html')
+
+		<div id="container" class="container">
+
+			<div class="wrap_path_menu">
+				<div class="inner">
+					<a href="/" class="btn_link_home"><i class="icon_go_home">home</i></a>
+					<ol class="lst_menu">
+
+						<!-- 메뉴 활성화 클래스 active -->
+						<li class="">
+							<dl>
+								<dt><button type="button">생산제품</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">회사소개</a></li>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li class="current_page"><a href="#;">생산제품</a></li>
+										<li><a href="#;">지속가능성</a></li>
+										<li><a href="#;">인재채용</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">생산공정</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">알루미늄 압연</a></li>
+										<li class="current_page"><a href="#;">생산공정</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">냉연</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">주조</a></li>
+										<li><a href="#;">열연</a></li>
+										<li class="current_page"><a href="#;">냉연</a></li>
+										<li><a href="#;">제품</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- end of wrap_path_menu -->
+
+			<!-- 배경이미지 : 해당 페이지의 경우에는 product 클래스가 추가됩니다. -->
+			<div class="wrap_sub_top product">
+				<div class="visual table">
+					<div class="row tit_area">
+						<div class="cell">
+							<h3 class="tit_kr">생산공정</h3>
+							<p class="tit_eng">MANUFACTURING PROCESS</p>
+						</div>
+					</div>
+					<!-- end of tit_area -->
+
+					<!-- 메뉴가 없을 경우 menu_area 삭제 -->
+					<div class="row menu_area">
+						<div class="cell">
+							<dl>
+								<dt class="btn_mob_tit">
+									<!--
+										현재 페이지 제목이 들어옵니다.
+										해당 버튼은 모바일에서만 노출되며
+										클릭시 하위 메뉴가 열리는 형식입니다.
+									 -->
+									<button type="button" class="btn_m_3depth">냉연</button>
+								</dt>
+								<dd>
+									<!-- 메뉴 갯수에 따라 클래스가 다릅니다.
+									[ len + 메뉴 갯수 ]
+									 -->
+									<ul class="lst_menu len_4">
+
+										<!-- 현재 페이지 메뉴 일 경우 current_page 클래스가 추가됩니다. -->
+										<li><a href="#;" >주조</a></li>
+										<li><a href="#;">열연</a></li>
+										<li><a href="#;" class="current_page">냉연</a></li>
+										<li><a href="#;">제품</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- end of menu_area -->
+
+				</div>
+				<!-- end of visual -->
+
+			</div>
+			<!-- end of wrap_sub_top -->
+
+			<section class="contents cont_wide">
+
+				<!-- 컨텐츠 최상위 제목 -->
+				<h1 class="tit">냉연  Cold Mill</h1>
+
+				<div class="in_cont_wide">
+          <div class="top_process">
+            <a href="#video" class="btn_df w190"><i class="icon_play"></i><span>생산공정 영상 보기</span></a>
+            <img src="images/S02_img_coldmill.gif">
+          </div>
+				</div>
+				<div class="process_bg">
+					<div class="in_cont_wide">
+						<ul>
+							<li><strong>냉간압연</strong>Cold Rolling</li>
+							<li>Coil Degreasing Line</li>
+							<li><strong>소둔</strong>Annealing</li>
+						</ul>
+					</div>
+				</div>
+				<div class="over_wide over_bg sub2_cont">
+					<div class="in_cont_wide">
+            <div class="desc_area">
+              <img src="images/img_sub2_3_1.jpg">
+              <div class="bx_txt_area">
+                <dl class="bx_txt">
+                  <dt>냉간압연기 Cold Rolling</dt>
+                  <dd>냉각된 coil에 대해 재결정 온도이하에서 스트립의 두께를 더욱 줄이기<br>위해 사용한다.</dd>
+                  <dd><strong>냉연 압연의 목적</strong></dd>
+                  <dd class="dot">가공경화에 의한 강도 및 경도 증가</dd>
+                  <div>
+                    <dd class="dot">결정립 미세화</dd>
+                    <dd class="dot">판 두께 정밀도 향상</dd>
+                  </div>
+                  <div>
+                    <dd class="dot">평탄도</dd>
+                    <dd class="dot">코일 표면 품질 향상</dd>
+                  </div>
+                </dl>
+              </div>
+            </div><!-- -->
+            <div class="desc_area oppos">
+              <img src="images/img_sub2_3_3.jpg">
+              <div class="bx_txt_area">
+                <dl class="bx_txt">
+                	<dt>Coil Degreasing Line</dt>
+                  <dd>냉간 압연된 코일 표면의 압연유를 제거하여 오일과 관련한 결함을<br>
+                  방지하기 위한 공정이다. </span>
+                    </dd>
+                </dl>
+              </div>
+            </div><!-- -->
+						<div class="desc_area">
+							<img src="images/img_sub2_3_2.jpg">
+							<div class="bx_txt_area">
+								<dl class="bx_txt">
+									<dt>소둔 Annealing</dt>
+									<dd>냉간 압연을 행하면 알루미늄 재료는 점점 더 경화되어 압연하기 어렵
+									게 된다. 이렇게 가공경화된 재료는 가공 변형을 제거하여 가공하기
+									쉬운 상태로 되돌릴 필요가 있고 그렇게 하기 위해 적당한 온도로
+									가열한다. 이것을 소둔처리라고 한다.<br>
+									<span>전신재 비열처리 합금에서의 소둔은 최종제품의 강도 조절을 위하여
+									냉간압연 도중에 열처리를 하는 중간 소둔, 냉간 압연 후 O재 및 H2X
+									재를 만들기 위한 최종 소둔과 H3X재를 만들기 위한 안정화 처리 소둔<br>
+									으로 나눌 수 있다.</span>
+								</dd>
+								</dl>
+							</div>
+						</div><!-- -->
+          </div>
+        </div>
+        <div class="in_cont_wide">
+          <strong class="bx_video_title" id="video">생산공정 영상 보기</strong>
+          <div class="bx_video">
+            <iframe width="1080" height="610" src="https://www.youtube.com/embed/pBuZEGYXA6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+
+			</section>
+
+			<!-- end of contents -->
+
+		</div>
+		<!-- end of container -->
+
+		@@include('./include/footer.html')
+	</div>
+	<!-- end of wrap -->
+
+</body>
+</html>

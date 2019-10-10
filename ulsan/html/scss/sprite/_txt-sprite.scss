@@ -1,0 +1,178 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$txt-automotive-name: 'txt-automotive';
+$txt-automotive-x: 0px;
+$txt-automotive-y: 237px;
+$txt-automotive-offset-x: 0px;
+$txt-automotive-offset-y: -237px;
+$txt-automotive-width: 259px;
+$txt-automotive-height: 40px;
+$txt-automotive-total-width: 522px;
+$txt-automotive-total-height: 324px;
+$txt-automotive-image: '../images/sprite/txt.png';
+$txt-automotive: (0px, 237px, 0px, -237px, 259px, 40px, 522px, 324px, '../images/sprite/txt.png', 'txt-automotive', );
+$txt-can-name: 'txt-can';
+$txt-can-x: 287px;
+$txt-can-y: 146px;
+$txt-can-offset-x: -287px;
+$txt-can-offset-y: -146px;
+$txt-can-width: 87px;
+$txt-can-height: 37px;
+$txt-can-total-width: 522px;
+$txt-can-total-height: 324px;
+$txt-can-image: '../images/sprite/txt.png';
+$txt-can: (287px, 146px, -287px, -146px, 87px, 37px, 522px, 324px, '../images/sprite/txt.png', 'txt-can', );
+$txt-green-name: 'txt-green';
+$txt-green-x: 0px;
+$txt-green-y: 82px;
+$txt-green-offset-x: 0px;
+$txt-green-offset-y: -82px;
+$txt-green-width: 273px;
+$txt-green-height: 63px;
+$txt-green-total-width: 522px;
+$txt-green-total-height: 324px;
+$txt-green-image: '../images/sprite/txt.png';
+$txt-green: (0px, 82px, 0px, -82px, 273px, 63px, 522px, 324px, '../images/sprite/txt.png', 'txt-green', );
+$txt-new-name: 'txt-new';
+$txt-new-x: 0px;
+$txt-new-y: 155px;
+$txt-new-offset-x: 0px;
+$txt-new-offset-y: -155px;
+$txt-new-width: 192px;
+$txt-new-height: 72px;
+$txt-new-total-width: 522px;
+$txt-new-total-height: 324px;
+$txt-new-image: '../images/sprite/txt.png';
+$txt-new: (0px, 155px, 0px, -155px, 192px, 72px, 522px, 324px, '../images/sprite/txt.png', 'txt-new', );
+$txt-shaping-name: 'txt-shaping';
+$txt-shaping-x: 287px;
+$txt-shaping-y: 100px;
+$txt-shaping-offset-x: -287px;
+$txt-shaping-offset-y: -100px;
+$txt-shaping-width: 141px;
+$txt-shaping-height: 36px;
+$txt-shaping-total-width: 522px;
+$txt-shaping-total-height: 324px;
+$txt-shaping-image: '../images/sprite/txt.png';
+$txt-shaping: (287px, 100px, -287px, -100px, 141px, 36px, 522px, 324px, '../images/sprite/txt.png', 'txt-shaping', );
+$txt-specialties-name: 'txt-specialties';
+$txt-specialties-x: 287px;
+$txt-specialties-y: 0px;
+$txt-specialties-offset-x: -287px;
+$txt-specialties-offset-y: 0px;
+$txt-specialties-width: 235px;
+$txt-specialties-height: 50px;
+$txt-specialties-total-width: 522px;
+$txt-specialties-total-height: 324px;
+$txt-specialties-image: '../images/sprite/txt.png';
+$txt-specialties: (287px, 0px, -287px, 0px, 235px, 50px, 522px, 324px, '../images/sprite/txt.png', 'txt-specialties', );
+$txt-sustainable-name: 'txt-sustainable';
+$txt-sustainable-x: 287px;
+$txt-sustainable-y: 60px;
+$txt-sustainable-offset-x: -287px;
+$txt-sustainable-offset-y: -60px;
+$txt-sustainable-width: 197px;
+$txt-sustainable-height: 30px;
+$txt-sustainable-total-width: 522px;
+$txt-sustainable-total-height: 324px;
+$txt-sustainable-image: '../images/sprite/txt.png';
+$txt-sustainable: (287px, 60px, -287px, -60px, 197px, 30px, 522px, 324px, '../images/sprite/txt.png', 'txt-sustainable', );
+$txt-thebest-name: 'txt-thebest';
+$txt-thebest-x: 0px;
+$txt-thebest-y: 0px;
+$txt-thebest-offset-x: 0px;
+$txt-thebest-offset-y: 0px;
+$txt-thebest-width: 277px;
+$txt-thebest-height: 72px;
+$txt-thebest-total-width: 522px;
+$txt-thebest-total-height: 324px;
+$txt-thebest-image: '../images/sprite/txt.png';
+$txt-thebest: (0px, 0px, 0px, 0px, 277px, 72px, 522px, 324px, '../images/sprite/txt.png', 'txt-thebest', );
+$txt-worldtogether-name: 'txt-worldtogether';
+$txt-worldtogether-x: 0px;
+$txt-worldtogether-y: 287px;
+$txt-worldtogether-offset-x: 0px;
+$txt-worldtogether-offset-y: -287px;
+$txt-worldtogether-width: 273px;
+$txt-worldtogether-height: 37px;
+$txt-worldtogether-total-width: 522px;
+$txt-worldtogether-total-height: 324px;
+$txt-worldtogether-image: '../images/sprite/txt.png';
+$txt-worldtogether: (0px, 287px, 0px, -287px, 273px, 37px, 522px, 324px, '../images/sprite/txt.png', 'txt-worldtogether', );
+$txt-width: 522px;
+$txt-height: 324px;
+$txt-image: '../images/sprite/txt.png';
+$txt-sprites: ($txt-automotive, $txt-can, $txt-green, $txt-new, $txt-shaping, $txt-specialties, $txt-sustainable, $txt-thebest, $txt-worldtogether, );
+$txt: (522px, 324px, '../images/sprite/txt.png', $txt-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

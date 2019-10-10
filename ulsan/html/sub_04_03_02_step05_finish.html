@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./include/sub_head_meta.html')
+
+<!-- 서브페이지에는 sub 클래스가 추가됩니다. -->
+<!-- 해당 페이지는 피씨에서만 사용되기 때문에 only_pc 클래스 추가됩니다. -->
+<body class="sub only_pc">
+
+	<div class="skip-content">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- end of skip-content -->
+
+	<div class="wrap">
+		@@include('./include/header.html')
+
+		<!-- 이 페이지에는 recruit 클래스가 추가됩니다. -->
+		<div id="container" class="container recruit">
+
+			<div class="wrap_path_menu">
+				<div class="inner">
+					<a href="/" class="btn_link_home"><i class="icon_go_home">home</i></a>
+					<ol class="lst_menu">
+
+						<!-- 메뉴 활성화 클래스 active -->
+						<li class="">
+							<dl>
+								<dt><button type="button">인재채용</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">회사소개</a></li>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li><a href="#;">생산제품</a></li>
+										<li><a href="#;">지속가능성</a></li>
+										<li class="current_page"><a href="#;">인재채용</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">회사 생활</button></dt>
+								<dd>
+									<ul>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li><a href="#;">회사 생활</a></li>
+										<li><a href="#;">입사지원 가이드</a></li>
+										<li class="current_page"><a href="#;">채용 정보</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">채용 공고</button></dt>
+								<dd>
+									<ul>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li class="current_page"><a href="#;">채용 공고</a></li>
+										<li><a href="#;">나의 지원 현황</a></li>
+										<li><a href="#;">채용 결과 확인</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- end of wrap_path_menu -->
+
+			<!-- 배경이미지 : 해당 페이지의 경우에는 apply 클래스가 추가됩니다. -->
+			<div class="wrap_sub_top apply">
+				<div class="visual table">
+					<div class="row tit_area">
+						<div class="cell">
+							<h3 class="tit_kr">채용정보</h3>
+							<p class="tit_eng">Applying Ulsan Aluminum</p>
+						</div>
+					</div>
+					<!-- end of tit_area -->
+
+					<!-- 메뉴가 없을 경우 menu_area 삭제 -->
+					<div class="row menu_area">
+						<div class="cell">
+							<dl>
+								<dt class="btn_mob_tit">
+									<!--
+										현재 페이지 제목이 들어옵니다.
+										해당 버튼은 모바일에서만 노출되며
+										클릭시 하위 메뉴가 열리는 형식입니다.
+									 -->
+									<button type="button" class="btn_m_3depth">채용공고</button>
+								</dt>
+								<dd>
+									<!-- 메뉴 갯수에 따라 클래스가 다릅니다.
+									[ len + 메뉴 갯수 ]
+									 -->
+									<ul class="lst_menu len_2">
+
+										<!-- 현재 페이지 메뉴 일 경우 current_page 클래스가 추가됩니다. -->
+										<li><a href="#;" class="">채용공고</a></li>
+										<li><a href="#;">나의 지원 현황</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- end of menu_area -->
+
+				</div>
+				<!-- end of visual -->
+
+			</div>
+			<!-- end of wrap_sub_top -->
+
+			<section class="contents">
+
+				<!-- 컨텐츠 최상위 제목 -->
+				<h1 class="tit">나의 지원서</h1>
+
+				<div class="ct_recruit rec_write">
+
+					<div class="bx_top_info">
+						<h2 class="tit">[일반직신입] 울산알루미늄 재무 담당자 모집</h2>
+						<div class="btns">
+							<a href="#;" class="btn_df btn_bd_dark">임시저장</a>
+						</div>
+					</div>
+					<!-- end of bx_top_info -->
+
+					<div class="bx_rec_step table">
+						<ol class="lst row">
+
+							<!-- 현재 step 에는 active 클래스 추가가 필요합니다. -->
+							<li class="cell">
+								<span class="step">Step 1</span>기본인적사항
+							</li>
+							<li class="cell">
+								<span class="step">Step 2</span>학력사항
+							</li>
+							<li class="cell">
+								<span class="step">Step 3</span>외국어/자격증
+							</li>
+							<li class="cell">
+								<span class="step">Step 4</span>경력사항
+							</li>
+							<li class="cell active">
+								<span class="step">Step 5</span>자기소개서
+							</li>
+						</ol>
+					</div>
+					<!-- end of bx_rec_step -->
+
+					<!--
+						정보 입력 상태별 클래스 입니다.
+						<div class="box_ipt"></div>
+
+						1. 작성 완료 시 : state_done
+						<div class="box_ipt state_done"></div>
+
+						2. 작성 중 : state_on
+						<div class="box_ipt state_on"></div>
+
+						3. 불러온 정보 : state_get
+						<div class="box_ipt state_get"></div>
+
+						4. 비활성화 : state_disable & input에 readonly 속성 추가
+						( 활성화시 클래스와 input readonly 삭제 )
+						<div class="box_ipt state_disable"></div>
+
+						5. 잘못된 입력 시 : state_wrong
+						<div class="box_ipt state_wrong"></div>
+					 -->
+
+					<div class="wrap_rec_form">
+						<p class="txt_form_essen">* 필수입력사항</p>
+						<div class="bx_rec_form">
+
+							<div class="tb_group tb_myintro_wrt">
+								<div class="table">
+									<div class="row">
+
+										<div class="cell cell_label">
+											<strong class="essen">*</strong>자기소개
+										</div>
+
+										<div class="cell cell_myintro">
+											<p>자신의 성장과정과 학창시절을 간략하게 소개하여 주십시오. (500자 이내)</p>
+
+											<div class="box_wrt_view">
+												직무 특성상 시기에 따라 하루 일과가 달라집니다. 분양이 없는 시기에는 추진 사업지별 상품전략 및 설계관리 업무에 대부분 시간을 할애하며, 틈틈이 상품 트렌드를 조사하고 분석하는 업무를 진행합니다. 분양시기에는 인테리어 설계 및 견본주택 건립을 위한 협력사 미팅과 출장이 많아집니다. 그리고 보통 퇴근 전15분 정도는 하루 업무를 점검하는 마무리 시간을 가집니다.
+												직무 특성상 시기에 따라 하루 일과가 달라집니다. 분양이 없는 시기에는 추진 사업지별 상품전략 및 설계관리 업무에 대부분 시간을 할애하며, 틈틈이 상품 트렌드를 조사하고 분석하는 업무를 진행합니다. 분양시기에는 인테리어 설계 및 견본주택 건립을 위한 협력사 미팅과 출장이 많아집니다. 그리고 보통 퇴근 전15분 정도는 하루 업무를 점검하는 마무리 시간을 가집니다.
+												직무 특성상 시기에 따라 하루 일과가 달라집니다. 분양이 없는 시기에는 추진 사업지별 상품전략 및 설계관리 업무에 대부분 시간을 할애하며, 틈틈이 상품 트렌드를 조사하고 분석하는 업무를 진행합니다. 분양시기에는 인테리어 설계 및 견본주택 건립을 위한 협력사 미팅과 출장이 많아집니다. 그리고 보통 퇴근 전15분 정도는 하루 업무를 점검하는 마무리 시간을 가집니다.
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="table">
+									<div class="row">
+
+										<div class="cell cell_label">
+										</div>
+
+										<div class="cell cell_myintro">
+											<p>울산알루미늄에 지원하신 동기와 지원하신 분야의 직무를 잘 수행하기 위하여 어떤 준비를 했는지 본인의 경험과 관련하 기술해 주십시오.(700자 이내)</p>
+											<div class="box_wrt_view">
+												직무 특성상 시기에 따라 하루 일과가 달라집니다. 분양이 없는 시기에는 추진 사업지별 상품전략 및 설계관리 업무에 대부분 시간을 할애하며, 틈틈이 상품 트렌드를 조사하고 분석하는 업무를 진행합니다. 분양시기에는 인테리어 설계 및 견본주택 건립을 위한 협력사 미팅과 출장이 많아집니다. 그리고 보통 퇴근 전15분 정도는 하루 업무를 점검하는 마무리 시간을 가집니다.
+												직무 특성상 시기에 따라 하루 일과가 달라집니다. 분양이 없는 시기에는 추진 사업지별 상품전략 및 설계관리 업무에 대부분 시간을 할애하며, 틈틈이 상품 트렌드를 조사하고 분석하는 업무를 진행합니다. 분양시기에는 인테리어 설계 및 견본주택 건립을 위한 협력사 미팅과 출장이 많아집니다. 그리고 보통 퇴근 전15분 정도는 하루 업무를 점검하는 마무리 시간을 가집니다.
+												직무 특성상 시기에 따라 하루 일과가 달라집니다. 분양이 없는 시기에는 추진 사업지별 상품전략 및 설계관리 업무에 대부분 시간을 할애하며, 틈틈이 상품 트렌드를 조사하고 분석하는 업무를 진행합니다. 분양시기에는 인테리어 설계 및 견본주택 건립을 위한 협력사 미팅과 출장이 많아집니다. 그리고 보통 퇴근 전15분 정도는 하루 업무를 점검하는 마무리 시간을 가집니다.
+												직무 특성상 시기에 따라 하루 일과가 달라집니다. 분양이 없는 시기에는 추진 사업지별 상품전략 및 설계관리 업무에 대부분 시간을 할애하며, 틈틈이 상품 트렌드를 조사하고 분석하는 업무를 진행합니다. 분양시기에는 인테리어 설계 및 견본주택 건립을 위한 협력사 미팅과 출장이 많아집니다. 그리고 보통 퇴근 전15분 정도는 하루 업무를 점검하는 마무리 시간을 가집니다.
+												직무 특성상 시기에 따라 하루 일과가 달라집니다. 분양이 없는 시기에는 추진 사업지별 상품전략 및 설계관리 업무에 대부분 시간을 할애하며, 틈틈이 상품 트렌드를 조사하고 분석하는 업무를 진행합니다. 분양시기에는 인테리어 설계 및 견본주택 건립을 위한 협력사 미팅과 출장이 많아집니다. 그리고 보통 퇴근 전15분 정도는 하루 업무를 점검하는 마무리 시간을 가집니다.
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="table">
+									<div class="row">
+
+										<div class="cell cell_label">
+										</div>
+
+										<div class="cell cell_myintro">
+											<p>자신의 성격의 장,단점 및 단점을 극복하기 위해 어떤 노력을 했는지 기술해 주십시오. (500자 이내)</p>
+											<div class="box_wrt_view">
+												품질엔지니어 업무는 현장에서 근무하는 공장엔지니어와 기술개발과에서 현장을 Support해주는 엔지니어로 크게 두가지로 나눌 수 있습니다. 생산 기술부는 보직을 순환하여 근무하므로 현장에서 배울 수 있는 경험과, 기술과에서 배울 수 있는 제선 전반적인 지식을 모두 쌓을 수 있습니다. 그럼 각각의 업무에 대하여간략하게 설명 드리겠습니다. 생산 기술부 공장엔지니어는 원료, 소결, 고로공장에서 물류를 조정하며, 고로에서 사용할 연료, 원료를 생산하며, 최종적으로 고로에서 용선을 만드는 공정을 관리합니다. 그 과정에서 특히 설비에 대한 공부가 많이 되며, 향후 공장장이 되었을 때, 많은 도움이 됩니다. 기술과 엔지니어는 현장에서 생산에 집중할 수 있도록 모든 압연공정의 전반적인 업무를 담당하여 현장을 Support 하는 역할을 합니다.
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="table">
+									<div class="row">
+
+										<div class="cell cell_label">
+										</div>
+
+										<div class="cell cell_myintro">
+											<p>새로운 환경이나 팀 내에서 어려운 과제에 직면했던 경험은 무엇이고, 이를 어떻게 해결 했는지 실제 사례를 예시로 하여 작성해 주십시오.(500자 이내)</p>
+											<div class="box_wrt_view">
+												품질엔지니어 업무는 현장에서 근무하는 공장엔지니어와 기술개발과에서 현장을 Support해주는 엔지니어로 크게 두가지로 나눌 수 있습니다. 생산 기술부는 보직을 순환하여 근무하므로 현장에서 배울 수 있는 경험과, 기술과에서 배울 수 있는 제선 전반적인 지식을 모두 쌓을 수 있습니다. 그럼 각각의 업무에 대하여간략하게 설명 드리겠습니다. 생산 기술부 공장엔지니어는 원료, 소결, 고로공장에서 물류를 조정하며, 고로에서 사용할 연료, 원료를 생산하며, 최종적으로 고로에서 용선을 만드는 공정을 관리합니다. 그 과정에서 특히 설비에 대한 공부가 많이 되며, 향후 공장장이 되었을 때, 많은 도움이 됩니다. 기술과 엔지니어는 현장에서 생산에 집중할 수 있도록 모든 압연공정의 전반적인 업무를 담당하여 현장을 Support 하는 역할을 합니다.품질엔지니어 업무는 현장에서 근무하는 공장엔지니어와 기술개발과에서 현장을 Support해주는 엔지니어로 크게 두가지로 나눌 수 있습니다. 생산 기술부는 보직을 순환하여 근무하므로 현장에서 배울 수 있는 경험과, 기술과에서 배울 수 있는 제선 전반적인 지식을 모두 쌓을 수 있습니다. 그럼 각각의 업무에 대하여간략하게 설명 드리겠습니다. 생산 기술부 공장엔지니어는 원료, 소결, 고로공장에서 물류를 조정하며, 고로에서 사용할 연료, 원료를 생산하며, 최종적으로 고로에서 용선을 만드는 공정을 관리합니다. 그 과정에서 특히 설비에 대한 공부가 많이 되며, 향후 공장장이 되었을 때, 많은 도움이 됩니다. 기술과 엔지니어는 현장에서 생산에 집중할 수 있도록 모든 압연공정의 전반적인 업무를 담당하여 현장을 Support 하는 역할을 합니다.품질엔지니어 업무는 현장에서 근무하는 공장엔지니어와 기술개발과에서 현장을 Support해주는 엔지니어로 크게 두가지로 나눌 수 있습니다. 생산 기술부는 보직을 순환하여 근무하므로 현장에서 배울 수 있는 경험과, 기술과에서 배울 수 있는 제선 전반적인 지식을 모두 쌓을 수 있습니다. 그럼 각각의 업무에 대하여간략하게 설명 드리겠습니다. 생산 기술부 공장엔지니어는 원료, 소결, 고로공장에서 물류를 조정하며, 고로에서 사용할 연료, 원료를 생산하며, 최종적으로 고로에서 용선을 만드는 공정을 관리합니다. 그 과정에서 특히 설비에 대한 공부가 많이 되며, 향후 공장장이 되었을 때, 많은 도움이 됩니다. 기술과 엔지니어는 현장에서 생산에 집중할 수 있도록 모든 압연공정의 전반적인 업무를 담당하여 현장을 Support 하는 역할을 합니다.
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<!-- end of tb_group -->
+
+							<div class="tb_group">
+								<div class="table">
+									<div class="row">
+
+										<div class="cell cell_label label_multi">
+											영문이력서<br />Cover Letter 첨부
+										</div>
+
+										<div class="cell cell_wrt_view">
+
+											<div class="box_wrt_view">
+												<ul class="lst_wrt">
+													<li>abcde_0123.doc</li>
+													<li>abcde_0123.pdf</li>
+												</ul>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<!-- end of tb_group -->
+
+							<div class="tb_group">
+								<div class="table">
+									<div class="row">
+
+										<div class="cell cell_label">
+											고교생활기록부 첨부
+										</div>
+
+										<div class="cell cell_wrt_view">
+
+											<div class="box_wrt_view">
+												<ul class="lst_wrt">
+													<li>HongGildong_highschool.pdf</li>
+													<li>highschool.pdf</li>
+												</ul>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<!-- end of tb_group -->
+
+						</div>
+						<!-- end of bx_rec_form -->
+
+					</div>
+					<!-- end of wrap_rec_form -->
+
+					<div class="bx_btn">
+						<a href="#;" class="btn_df btn_bd_dark w180">임시저장</a>
+						<a href="#;" class="btn_df w180">이전</a>
+						<a href="#;" class="btn_df w180">다음</a>
+					</div>
+					<!-- end of bx_btn -->
+
+				</div>
+				<!-- end of ct_recruit -->
+
+			</section>
+			<!-- end of contents -->
+
+		</div>
+		<!-- end of container -->
+
+		@@include('./include/footer.html')
+	</div>
+	<!-- end of wrap -->
+
+</body>
+</html>

@@ -1,0 +1,895 @@
+@charset "UTF-8";
+
+// 게시판 상단
+.ct_board{
+	position:relative;
+	.bx_bd_top{
+		position: relative;
+		margin-bottom: 20px;
+		@include after() ;
+		.bd_num{
+			float:left;
+			padding-top: 28px;
+			vertical-align: bottom;
+			font-size:16px;
+			line-height: 1;
+			span{
+				font-weight: bold;
+				color:#0064b0;
+			}
+		}
+		.bd_srch{
+			float:right;
+			text-align: right;
+			font-size:0;
+			background-color: #f4f4f4;
+
+			$form-height : 44px;
+
+			p{
+				display: inline-block;
+			}
+			select, input[type=text]{
+				display: inline-block;
+				width:100%;
+				background-color: transparent;
+				font-size:16px;
+				border:0;
+				height:$form-height;
+				line-height: $form-height;
+			}
+			.slt{
+				position: relative;
+				width:130px;
+				padding:0 15px;
+				margin-right: 15px;
+				&:after{
+					content:"";
+					display: block;
+					position: absolute;
+					right:0;
+					top:50%;
+					margin-top: -5px;
+					width:1px;
+					height:10px;
+					background-color: #b5b5b5;
+				}
+			}
+			.ip{
+				position: relative;
+				width:300px;
+				padding-right: $form-height;
+				.btn_srch_submit{
+					position: absolute;
+					right:0;
+					top:0;
+					display: inline-block;
+					width:$form-height;
+					height: $form-height;
+					vertical-align: top;
+					.icon_srch{
+						@include sprite( $icons-ic_srch ) ;
+						position:absolute;
+						left:50%;
+						top:50%;
+						margin:-12px 0 0 -12px;
+					}
+				}
+			}
+		}
+	}
+	.bx_bd_tb{
+		margin-bottom: 50px;
+		.tb_bot_txt{
+			padding-top: 20px;
+			font-size:16px;
+			.t_strg{
+				color:#0064b0;
+			}
+		}
+	}
+	.bx_bd_bot{
+		@include after();
+		.left{
+			float:left;
+		}
+		.right{
+			float:right;
+			.btn_df{
+				margin:0 5px;
+			}
+		}
+		.center{
+			text-align: center;
+		}
+		.move_bd{
+			font-size:0;
+			.prev, .next{
+				display: inline-block;
+				margin-right: 10px;
+				@include texthide() ;
+			}
+			.prev{
+				@include sprite( $icons-ic_btn_prev ) ;
+				&:hover{
+					@include sprite( $icons-ic_btn_prev_hover ) ;
+				}
+			}
+			.next{
+				@include sprite( $icons-ic_btn_next ) ;
+				&:hover{
+					@include sprite( $icons-ic_btn_next_hover ) ;
+				}
+			}
+		}
+	}
+	&.board_view .bx_bd_tb{
+		margin-bottom:30px;
+	}
+	.btn_go_list{
+		margin:0;
+	}
+}
+
+// 기본 게시판 리스트
+.tb_default_lst{
+	width:100%;
+	border-top: 3px solid #0064b0;
+	tbody{
+		tr{
+			td{
+				padding: 35px 10px;
+				text-align: center;
+				line-height: 1;
+				color:#000;
+				font-size:16px;
+				border-bottom: 1px solid #e1e1e1;
+				&.tit{
+					padding:35px 0;
+					text-align: left;
+					font-size:20px;
+					a{
+						display:block;
+						width:95%;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+				}
+				&.apl_period{
+					text-align: left;
+				}
+				&.btn_apl{
+					a{
+						margin:0;
+					}
+				}
+				.cut{
+					display:block;
+					width:95%;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+			&.top_notice{
+				td{
+					background-color: #e3f2f9;
+				}
+			}
+		}
+	}
+	&.tb_apply{
+		tbody{
+			tr{
+				td{
+					padding:24px 10px;
+				}
+			}
+		}
+	}
+}
+
+// 기본 게시판 리스트 version2 ( div 테이블 )
+.tb_default_lst_v2{
+	width:100%;
+	border-top: 3px solid #0064b0;
+	.row{
+		.cell{
+			padding: 35px 10px;
+			text-align: center;
+			line-height: 1;
+			color:#000;
+			font-size:16px;
+			border-bottom: 1px solid #e1e1e1;
+			&.tit{
+				padding:35px 0;
+				text-align: left;
+				font-size:20px;
+				a{
+					display:block;
+					width:95%;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+			.cut{
+				display:block;
+				width:95%;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			&.apl_period{
+				text-align: left;
+			}
+			&.btn_apl{
+				a{
+					margin:0;
+				}
+			}
+		}
+		&.top_notice{
+			.cell{
+				background-color: #e3f2f9;
+			}
+		}
+	}
+	// 공지 게시판만 적용
+	@at-root .board_notice & .cell{
+		&.number{
+			width:100px;
+		}
+	}
+	// 채용 게시판만 적용
+	@at-root .board_apply & .cell{
+		padding:24px 10px;
+		&.part{
+			width:115px;
+		}
+		&.apl_period{
+			width:250px;
+		}
+		&.btn_apl{
+			width:158px;
+		}
+	}
+	// 나의 지원현황 게시판 적용
+	@at-root .board_apply.board_apply_mylist & .cell{
+		&.btn_apl{
+			font-size:0;
+			width:320px;
+			.label_ing{
+				display: inline-block;
+				width:100px;
+				margin:0 5px;
+				font-size:16px;
+				font-weight: bold;
+				color:#0064b0;
+			}
+			.btn_df{
+				margin:0 5px;
+				&:first-child{
+					width:100px;
+				}
+			}
+		}
+		&.apl_period{
+			width:250px;
+		}
+	}
+	// 주소찾기
+	&.tb_srch_addr{
+		.cell{
+			padding:20px 10px;
+		}
+		.cell.number{
+			width:80px;
+		}
+		.cell.addr_num{
+			width:150px;
+		}
+		.cell.addr_txt{
+			padding:20px 0;
+		}
+	}
+}
+
+// 채용 공고 게시판 공고 기한 라벨 및 텍스트
+.apl_period{
+	text-align: left;
+	.label{
+		display: inline-block;
+		margin-right: 15px;
+		padding:7px 0;
+		width:50px;
+		text-align: center;
+		line-height: 1;
+		border:1px solid #000;
+		color:#000;
+		font-size:14px;
+		font-weight: bold;
+		&.fix_date{
+			border-color:#0064b0;
+			color:#0064b0;
+		}
+		&.appl_end{
+			background-color: #f4f4f4;
+			border:none;
+			color:#959595;
+		}
+	}
+}
+
+// 기본 게시판 보기
+.tb_default_view{
+	border-top: 3px solid #0064b0;
+	.top{
+		.cell{
+			background-color: #e3f2f9;
+			border-bottom: 1px solid #e1e1e1;
+		}
+		.num{
+			width:98px;
+			padding-left: 40px;
+			font-size:16px;
+		}
+		.text{
+			padding:15px 50px 15px 40px;
+			font-size:20px;
+			line-height: 30px;
+		}
+		.apl_part{
+			font-size:16px;
+			width:140px;
+			padding-left: 40px;
+		}
+		.apl_period{
+			width:290px;
+		}
+	}
+	.info{
+		.cell{
+			padding:14px 40px;
+			border-bottom: 1px solid #e1e1e1;
+			&.lst{
+				ul{
+					font-size:0;
+					li{
+						position: relative;
+						display: inline-block;
+						padding-right: 21px;
+						margin-right: 20px;
+						line-height: 1;
+						font-size:16px;
+						color:#969696;
+						&:after{
+							content:"";
+							display: block;
+							position:absolute;
+							right:0;
+							top:50%;
+							margin-top: -5px;
+							width:1px;
+							height:10px;
+							background-color: #e1e1e1;
+						}
+						&:last-child:after{
+							display: none;
+						}
+						span{
+							display: inline-block;
+							margin-right: 7px;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cont{
+		.cell{
+			border-bottom: 1px solid #e1e1e1;
+			padding:40px;
+			font-size:16px;
+			line-height: 24px;
+			img{
+				max-width: 100%;
+				height:auto;
+			}
+			.btns{
+				text-align: center;
+				margin:40px 0;
+			}
+		}
+	}
+	.file{
+		.cell{
+			padding:14px 0 14px 40px;
+			border-bottom: 1px solid #e1e1e1;
+		}
+		.tit{
+			width:114px;
+			font-size:16px;
+			line-height: 1;
+			font-weight: bold;
+			color:#969696;
+			vertical-align: top;
+		}
+		.lst{
+			padding: 0;
+			ul{
+				li{
+					padding: 14px 0;
+					line-height: 1;
+					border-bottom:1px solid #e1e1e1;
+					a{
+						color:#969696;
+					}
+					&:last-child{
+						border-bottom: 0;
+					}
+					.icon_file{
+						margin-left: 10px;
+						vertical-align: top;
+						@include sprite( $icons-ic_download ) ;
+					}
+				}
+			}
+		}
+	}
+}
+
+// 페이징
+.paging{
+	text-align: center;
+	font-size:0;
+	a, .current_page{
+		display: inline-block;
+		width:30px;
+		height:30px;
+		line-height:28px;
+		text-align: center;
+		vertical-align: middle;
+		font-size:16px;
+		margin:0 8px;
+	}
+	.current_page{
+		border:1px solid #0064b0;
+		color:#0064b0;
+		font-weight: bold;
+	}
+	.prev_page, .next_page{
+		position: relative;
+		i{
+			position: absolute;
+			left:50%;
+			top:50%;
+			margin:-7px 0 0 -11px;
+		}
+	}
+	.prev_page{
+		margin-right: 28px;
+		.icon_prev{
+			@include sprite( $icons-ic_prev_page ) ;
+		}
+	}
+	.next_page{
+		margin-left: 28px;
+		.icon_next{
+			@include sprite( $icons-ic_next_page ) ;
+		}
+	}
+}
+
+// 기본 게시판 작성하기
+.tb_default_write{
+	.box_ipt{
+		&.state_disable{
+			.iptxt_default{
+				border: 1px solid #ebebeb;
+				background-color: #f7f7f7;
+				color:#969696;
+			}
+		}
+	}
+	.table{
+		border-top: 3px solid #0064b0;
+	}
+	.cell{
+		padding:10px;
+		border-bottom: 1px solid #e1e1e1;
+		&.cell_vt{
+			vertical-align: top;
+		}
+		&.cell_label{
+			width: 180px;
+			padding-left: 30px;
+			font-size: 16px;
+			line-height: 42px;
+			font-weight: bold;
+			color: #000;
+		}
+		&.cell_fix{
+			label{
+				font-size:14px;
+				color:#969696;
+			}
+		}
+		&.cell_write, &.cell_date{
+			.box_ipt{
+				width:170px;
+			}
+		}
+		&.cell_date{
+			.box_ipt{
+				position: relative;
+				.iptxt_default{
+					padding-right: 38px;
+				}
+				.btn_calendar{
+					position: absolute;
+					right:5px;
+					top:5px;
+					@include sprite( $icons-ic_calendar ) ;
+					@include texthide();
+				}
+			}
+		}
+		&.cell_editor{
+			.bx_editor{
+				min-height:100px;
+			}
+		}
+		&.cell_file{
+			> ul > li{
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+				border-bottom: 1px solid #e1e1e1;
+				&:last-child{
+					margin-bottom: 0;
+					padding-bottom: 0;
+					border-bottom: 0;
+				}
+			}
+		}
+		&.cell_secret{
+			.radio_elem{
+				display: inline-block;
+				margin-right: 30px;
+			}
+		}
+		.btns_file_control{
+			display: inline-block;
+			font-size:0;
+			margin-left: 7px;
+			line-height: 20px;
+			vertical-align: middle;
+			.btn_add, .btn_remove{
+				display: inline-block;
+				vertical-align: top;
+				@include texthide();
+			}
+			.btn_add{
+				margin-right: 5px;
+				@include sprite( $icons-ic_add)
+			}
+			.btn_remove{
+				@include sprite( $icons-ic_remove)
+			}
+		}
+	}
+}
+
+// 태블릿
+@include tab {
+
+	// 게시판 상단
+	.ct_board{
+		.bx_bd_top{
+			padding-bottom:30px;
+			margin-bottom: 10px;
+			.bd_num{
+				position: absolute;
+				left:0;
+				bottom:0;
+				float:none;
+				padding-top: 0;
+				font-size:13px;
+			}
+			.bd_srch{
+				float:none;
+				background-color: transparent;
+
+				$form-height : 35px;
+				p{
+					display: block;
+				}
+				select, input[type=text]{
+					font-size:14px;
+					height:$form-height;
+					line-height: $form-height;
+				}
+				.slt{
+					width:100%;
+					margin-right: 0;
+					margin-bottom: 5px;
+					background-color: #f4f4f4;
+					&:after{
+						display: inline-block;
+						position: absolute;
+						right:15px;
+						top:50%;
+						background-color: transparent;
+						margin-top: -2px;
+						@include retina-sprite( $icons2x-ic-selectbox-group ) ;
+					}
+					select{
+						position: relative;
+						&::-ms-expand {
+							display: none;
+						}
+						-webkit-appearance: none;
+						appearance: none;
+					}
+				}
+				.ip{
+					width:100%;
+					padding:0 15px;
+					padding-right: $form-height;
+					background-color: #f4f4f4;
+					.btn_srch_submit{
+						width:$form-height;
+						height: $form-height;
+						.icon_srch{
+							@include retina-sprite( $icons2x-ic-srch-group ) ;
+							margin:-9px 0 0 -9px;
+						}
+					}
+				}
+			}
+		}
+		.bx_bd_tb{
+			margin-bottom: 30px;
+			.tb_bot_txt{
+				font-size:14px;
+				padding-top: 10px;
+			}
+		}
+		.bx_bd_bot{
+			.move_bd{
+				.prev{
+					@include retina-sprite( $icons2x-ic-btn-prev-group ) ;
+				}
+				.next{
+					@include retina-sprite( $icons2x-ic-btn-next-group ) ;
+				}
+			}
+		}
+		&.board_view .bx_bd_tb{
+			margin-bottom:20px;
+		}
+	}
+
+	// 기본 게시판 리스트 version2 ( div 테이블 )
+	.tb_default_lst_v2{
+		border-top: 2px solid #0064b0;
+		&, .row, .cell{
+			display: block;
+		}
+		.row{
+			padding:15px;
+			border-bottom: 1px solid #e1e1e1;
+			.cell{
+				padding: 0px;
+				border-bottom: 0;
+				font-size:13px;
+				&.tit{
+					padding:0;
+					font-size:17px;
+					a{
+						width:100%;
+						white-space: normal;
+						line-height: 1.4;
+						max-height:2.8em;
+						text-align: left;
+						word-wrap: break-word;
+						display: -webkit-box;
+						-webkit-line-clamp: 2;
+						-webkit-box-orient: vertical;
+					}
+				}
+			}
+			&.top_notice{
+				background-color: #e3f2f9;
+				.cell{
+					background-color: transparent;
+				}
+			}
+		}
+		// 공지 게시판만 적용
+		@at-root .board_notice & .cell{
+			&.number{
+				width:100%;
+				text-align: left;
+				margin-bottom: 5px;
+			}
+		}
+		// 채용 게시판만 적용
+		@at-root .board_apply & .cell{
+			padding:0px;
+			text-align: left;
+			&.part{
+				width:100%;
+				margin-bottom: 5px;
+			}
+			&.tit{
+				margin-bottom: 10px;
+			}
+			&.apl_period{
+				width:100%;
+			}
+			&.btn_apl{
+				display: none;
+				width:100%;
+			}
+		}
+		// 나의 지원현황 게시판 적용
+		@at-root .board_apply.board_apply_mylist & .cell{
+			&.apl_period{
+				margin-bottom: 10px;
+			}
+			&.btn_apl{
+				display: block;
+				.label_ing{
+					display: inline-block;
+					padding:10px 0;
+					background-color: #f4f4f4;
+					margin:0;
+					font-size:14px;
+					text-align: center;
+				}
+				.btn_df{
+					display: none;
+					margin:0;
+					&:first-child{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	// 기본 게시판 보기
+	.tb_default_view{
+		border-top: 2px solid #0064b0;
+		.table, .row, .cell{
+			display: block;
+		}
+		.row{
+			padding: 15px;
+		}
+		.top{
+			background-color: #e3f2f9;
+			border-bottom: 1px solid #e1e1e1;
+			.cell{
+				background-color: transparent;
+				border-bottom:0;
+			}
+			.num{
+				width:100%;
+				padding-left: 0;
+				font-size:13px;
+				margin-bottom: 5px;
+			}
+			.text{
+				padding:0;
+				font-size:17px;
+				line-height: 1.4;
+			}
+			.apl_part{
+				font-size:13px;
+				width:100%;
+				padding-left:0px;
+			}
+			.apl_period{
+				width:100%;
+			}
+		}
+		// 채용 게시판만 적용
+		@at-root .board_apply & .cell{
+			&.text{
+				margin-bottom: 10px;
+			}
+		}
+		.info{
+			display: none;
+		}
+		.cont{
+			.row{
+				border-bottom: 1px solid #e1e1e1;
+			}
+			.cell{
+				padding:0 0 35px 0;
+				font-size:14px;
+				line-height:1.5;
+				border: 0;
+				.btns{
+					margin:10px 0;
+				}
+			}
+		}
+		.file{
+			.row{
+				padding: 0;
+			}
+			.cell{
+				padding:15px;
+				border-bottom: 1px solid #e1e1e1;
+			}
+			.tit{
+				width:100%;
+				font-size:14px;
+			}
+			.lst{
+				padding: 0;
+				ul{
+					li{
+						padding: 15px;
+						a{
+							font-size:14px;
+						}
+						.icon_file{
+							@include retina-sprite( $icons2x-ic-download-group ) ;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// 페이징
+	.paging{
+		a, .current_page{
+			display: inline-block;
+			width:25px;
+			height:25px;
+			line-height:23px;
+			font-size:13px;
+			margin:0 6px;
+		}
+		.prev_page, .next_page{
+			i{
+				margin:-7px 0 0 -11px;
+			}
+		}
+		.prev_page{
+			margin-right: 18px;
+			.icon_prev{
+				@include retina-sprite( $icons2x-ic-prev-page-group ) ;
+			}
+		}
+		.next_page{
+			margin-left: 18px;
+			.icon_next{
+				@include retina-sprite( $icons2x-ic-next-page-group ) ;
+			}
+		}
+	}
+
+	// 채용 공고 게시판 공고 기한 라벨 및 텍스트
+	.apl_period{
+		.label{
+			margin-right: 10px;
+			padding:3px 0;
+			width:40px;
+			font-size:11px;
+		}
+		.date{
+			font-size: 13px;
+		}
+	}
+
+
+}

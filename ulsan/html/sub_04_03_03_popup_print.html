@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./include/sub_head_meta.html')
+
+<!-- 서브페이지에는 sub 클래스가 추가됩니다. -->
+<!-- 해당 페이지는 피씨에서만 사용되기 때문에 only_pc 클래스 추가됩니다. -->
+<!-- 팝업이 오픈 상태일 경우 _noScroll 클래스가 body에 추가됩니다. -->
+<body class="sub only_pc _noScroll">
+
+	<div class="skip-content">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- end of skip-content -->
+
+	<div class="wrap">
+		@@include('./include/header.html')
+
+		<!-- 이 페이지에는 recruit 클래스가 추가됩니다. -->
+		<div id="container" class="container recruit">
+
+			<div class="wrap_path_menu">
+				<div class="inner">
+					<a href="/" class="btn_link_home"><i class="icon_go_home">home</i></a>
+					<ol class="lst_menu">
+
+						<!-- 메뉴 활성화 클래스 active -->
+						<li class="">
+							<dl>
+								<dt><button type="button">인재채용</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">회사소개</a></li>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li><a href="#;">생산제품</a></li>
+										<li><a href="#;">지속가능성</a></li>
+										<li class="current_page"><a href="#;">인재채용</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">회사 생활</button></dt>
+								<dd>
+									<ul>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li><a href="#;">회사 생활</a></li>
+										<li><a href="#;">입사지원 가이드</a></li>
+										<li class="current_page"><a href="#;">채용 정보</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">채용 공고</button></dt>
+								<dd>
+									<ul>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li class="current_page"><a href="#;">채용 공고</a></li>
+										<li><a href="#;">나의 지원 현황</a></li>
+										<li><a href="#;">채용 결과 확인</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- end of wrap_path_menu -->
+
+			<!-- 배경이미지 : 해당 페이지의 경우에는 apply 클래스가 추가됩니다. -->
+			<div class="wrap_sub_top apply">
+				<div class="visual table">
+					<div class="row tit_area">
+						<div class="cell">
+							<h3 class="tit_kr">채용정보</h3>
+							<p class="tit_eng">Applying Ulsan Aluminum</p>
+						</div>
+					</div>
+					<!-- end of tit_area -->
+
+					<!-- 메뉴가 없을 경우 menu_area 삭제 -->
+					<div class="row menu_area">
+						<div class="cell">
+							<dl>
+								<dt class="btn_mob_tit">
+									<!--
+										현재 페이지 제목이 들어옵니다.
+										해당 버튼은 모바일에서만 노출되며
+										클릭시 하위 메뉴가 열리는 형식입니다.
+									 -->
+									<button type="button" class="btn_m_3depth">채용공고</button>
+								</dt>
+								<dd>
+									<!-- 메뉴 갯수에 따라 클래스가 다릅니다.
+									[ len + 메뉴 갯수 ]
+									 -->
+									<ul class="lst_menu len_2">
+
+										<!-- 현재 페이지 메뉴 일 경우 current_page 클래스가 추가됩니다. -->
+										<li><a href="#;" class="">채용공고</a></li>
+										<li><a href="#;">나의 지원 현황</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- end of menu_area -->
+
+				</div>
+				<!-- end of visual -->
+
+			</div>
+			<!-- end of wrap_sub_top -->
+
+			<section class="contents">
+
+				<!-- 컨텐츠 최상위 제목 -->
+				<h1 class="tit">나의 지원서</h1>
+
+				<div class="ct_recruit rec_write">
+
+					<div class="bx_top_info">
+						<h2 class="tit">[일반직신입] 울산알루미늄 재무 담당자 모집</h2>
+						<div class="btns">
+							<a href="#;" class="btn_df btn_bd_dark">임시저장</a>
+						</div>
+					</div>
+					<!-- end of bx_top_info -->
+
+					<div class="bx_rec_step table">
+						<ol class="lst row">
+
+							<!-- 현재 step 에는 active 클래스 추가가 필요합니다. -->
+							<li class="cell">
+								<span class="step">Step 1</span>기본인적사항
+							</li>
+							<li class="cell">
+								<span class="step">Step 2</span>학력사항
+							</li>
+							<li class="cell active">
+								<span class="step">Step 3</span>외국어/자격증
+							</li>
+							<li class="cell">
+								<span class="step">Step 4</span>경력사항
+							</li>
+							<li class="cell">
+								<span class="step">Step 5</span>자기소개서
+							</li>
+						</ol>
+					</div>
+					<!-- end of bx_rec_step -->
+
+					<div class="wrap_rec_form">
+						<p class="txt_form_essen">* 필수입력사항</p>
+						<div class="bx_rec_form">
+
+							<div class="tb_group">
+								<div class="table">
+									<div class="row">
+
+										<div class="cell cell_label">
+											<strong class="essen">*</strong>공인 영어 성적
+										</div>
+
+										<div class="cell cell_eng">
+											<div class="box_slt">
+												<select name="" class="slt_default">
+													<option value="">시험명</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="cell cell_eng_scr">
+											<div class="box_ipt state_disable">
+												<label for="t_engScore" class="lab_txt">점수/등급</label>
+												<input type="text" class="iptxt_default" id="t_engScore" readonly>
+											</div>
+										</div>
+
+										<div class="cell cell_eng_day">
+											<div class="box_ipt state_disable">
+												<label for="t_engDay" class="lab_txt">취득연월일</label>
+												<input type="text" class="iptxt_default" id="t_engDay" readonly>
+											</div>
+										</div>
+
+										<div class="cell cell_sc_btn">
+											<div class="table tb_cell_mod">
+												<div class="row">
+													<div class="cell cell_save">
+														<button type="button" class="btn_df btn_dark">저장</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!-- end of tb_group -->
+
+							<div class="tb_group">
+								<div class="table">
+									<div class="row">
+
+										<div class="cell cell_label">
+											<strong class="essen">*</strong>기타 어학 성적
+										</div>
+
+										<div class="cell cell_lang">
+											<div class="box_ipt">
+												<label for="t_lang" class="lab_txt">언어</label>
+												<input type="text" class="iptxt_default" id="t_lang">
+											</div>
+										</div>
+
+										<div class="cell cell_lang_name">
+											<div class="box_ipt">
+												<label for="t_langName" class="lab_txt">시험명</label>
+												<input type="text" class="iptxt_default" id="t_langName">
+											</div>
+										</div>
+
+										<div class="cell cell_lang_scr">
+											<div class="box_ipt">
+												<label for="t_langScore" class="lab_txt">점수/등급</label>
+												<input type="text" class="iptxt_default" id="t_langScore">
+											</div>
+										</div>
+
+										<div class="cell cell_lang_day">
+											<div class="box_ipt">
+												<label for="t_lanDay" class="lab_txt">취득연월일</label>
+												<input type="text" class="iptxt_default" id="t_lanDay">
+											</div>
+										</div>
+
+										<div class="cell cell_sc_btn">
+											<div class="table tb_cell_mod">
+												<div class="row">
+													<div class="cell cell_save">
+														<button type="button" class="btn_df btn_dark">저장</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!-- end of tb_group -->
+
+							<div class="tb_group">
+								<div class="table">
+									<div class="row">
+
+										<div class="cell cell_label">
+											자격증
+										</div>
+
+										<div class="cell cell_lic">
+											<div class="box_ipt">
+												<label for="t_licName" class="lab_txt">자격명</label>
+												<input type="text" class="iptxt_default" id="t_licName">
+											</div>
+										</div>
+
+										<div class="cell cell_lic_scr">
+											<div class="box_ipt">
+												<label for="t_licScore" class="lab_txt">점수/등급</label>
+												<input type="text" class="iptxt_default" id="t_licScore">
+											</div>
+										</div>
+
+										<div class="cell cell_lic_appr">
+											<div class="box_ipt">
+												<label for="t_licAppr" class="lab_txt">인증기관</label>
+												<input type="text" class="iptxt_default" id="t_licAppr">
+											</div>
+										</div>
+
+
+										<div class="cell cell_lic_day">
+											<div class="box_ipt">
+												<label for="t_licDay" class="lab_txt">취득연월일</label>
+												<input type="text" class="iptxt_default" id="t_licDay">
+											</div>
+										</div>
+
+										<div class="cell cell_sc_btn">
+											<div class="table tb_cell_mod">
+												<div class="row">
+													<div class="cell cell_save">
+														<button type="button" class="btn_df btn_dark">저장</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!-- end of tb_group -->
+
+						</div>
+						<!-- end of bx_rec_form -->
+
+					</div>
+
+					<div class="bx_btn">
+						<a href="#;" class="btn_df btn_bd_dark w180">임시저장</a>
+						<a href="#;" class="btn_df w180">이전</a>
+						<a href="#;" class="btn_df w180">다음</a>
+					</div>
+					<!-- end of bx_btn -->
+
+				</div>
+				<!-- end of ct_recruit -->
+
+			</section>
+			<!-- end of contents -->
+
+		</div>
+		<!-- end of container -->
+
+		@@include('./include/footer.html')
+	</div>
+	<!-- end of wrap -->
+
+	<!-- 인쇄미리보기 팝업에는 pop_print_view 클래스가 추가됩니다. -->
+	<!-- 팝업 활성화 클래스 : open_popup -->
+	<div class="popup_wrap pop_print_view open_popup">
+		<div class="popup_container">
+			<div class="p_header">
+				<strong class="title">인쇄 미리보기</strong>
+				<button type="button" class="btn_close">팝업 닫기</button>
+			</div>
+			<div class="p_contents">
+
+				<div class="ct_print_view">
+
+					<div class="bx_pt_top">
+						<strong class="tit">[일반직신입] 울산알루미늄 재무 담당자 모집</strong>
+						<div class="btns">
+							<a href="#;" class="btn_df btn_bd_dark" onclick="printArea();return false;">인쇄하기</a>
+						</div>
+					</div>
+
+					<div class="bx_pt_tb">
+						<strong class="wrt_part">기본인적사항</strong>
+						<div class="table tb_default_lst_v2">
+							<div class="row">
+								<div class="cell cell_w_name">
+									직무분야
+								</div>
+								<div class="cell cell_w_view">
+									생산기술 - 공정 엔지니어
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell cell_w_name">
+									인적사항
+								</div>
+								<div class="cell cell_w_view">
+									<div class="box_wrt_view">
+										<ul class="lst_wrt">
+											<li>홍길동</li>
+											<li>남</li>
+											<li>honggildong</li>
+											<li>010-1234-5678</li>
+											<li>asfksajdfl@kasjflsadfsd.co.kr</li>
+											<li>서울시 강서구 화곡로 68길 82 강서아이티밸리 1004호</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell cell_w_name">
+									병역
+								</div>
+								<div class="cell cell_w_view">
+									면제 - 생계곤란형 해당없음 해당없음
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell cell_w_name">
+									보훈대상
+								</div>
+								<div class="cell cell_w_view">
+									해당없음
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell cell_w_name">
+									장애대상
+								</div>
+								<div class="cell cell_w_view">
+									해당없음
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end of bx_bd_tb -->
+
+					<div class="bx_pt_tb">
+						<strong class="wrt_part">학력사항</strong>
+						<div class="table tb_default_lst_v2">
+							<div class="row">
+								<div class="cell cell_w_name">
+									최종학력
+								</div>
+								<div class="cell cell_w_view">
+									학사
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell cell_w_name">
+									고등학교
+								</div>
+								<div class="cell cell_w_view">
+									<div class="box_wrt_view">
+										<ul class="lst_wrt">
+											<li>졸업</li>
+											<li>울산고등학교</li>
+											<li>인문계</li>
+											<li>울산 중구</li>
+											<li>2014.03</li>
+											<li>2017.02</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell cell_w_name">
+									학사
+								</div>
+								<div class="cell cell_w_view">
+									<div class="box_wrt_view">
+										<ul class="lst_wrt">
+											<li>졸업</li>
+											<li>울산대학교</li>
+											<li>복수전공, 국어국문학과</li>
+											<li>4.5, 4.1</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end of bx_bd_tb -->
+
+					<div class="bx_pt_tb">
+						<strong class="wrt_part">경력사항</strong>
+						<div class="table tb_default_lst_v2">
+							<div class="row">
+								<div class="cell cell_w_name">
+									경력사항
+								</div>
+								<div class="cell cell_w_view">
+									내용이 들어갑니다.
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell cell_w_name">
+								</div>
+								<div class="cell cell_w_view">
+									내용이 들어갑니다.
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end of bx_bd_tb -->
+
+					<div class="bx_pt_tb bx_mystory">
+						<strong class="wrt_part">자기소개</strong>
+						<div class="table tb_default_lst_v2">
+							<div class="row">
+								<div class="cell cell_w_view">
+									<div class="box_wrt_view">
+										<dl class="txt_my_story">
+											<dt>자신의 성장과정과 학창시절을 간략하게 소개하여 주십시오. (500자 이내)</dt>
+											<dd>내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell cell_w_view">
+									<div class="box_wrt_view">
+										<dl class="txt_my_story">
+											<dt>자신의 성장과정과 학창시절을 간략하게 소개하여 주십시오. (500자 이내)</dt>
+											<dd>내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="table tb_default_lst_v2">
+							<div class="row">
+								<div class="cell cell_w_name">
+									영문 이력서 / <br />Cover Letter
+								</div>
+								<div class="cell cell_w_view">
+									내용이 들어갑니다.
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell cell_w_name">
+									고교생활기록부
+								</div>
+								<div class="cell cell_w_view">
+									내용이 들어갑니다.
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end of bx_bd_tb -->
+
+				</div>
+				<!-- end of ct_print_view -->
+
+			</div>
+			<div class="p_footer"></div>
+		</div>
+		<!-- end of popup_container -->
+
+		<div class="popup_dimd"></div>
+	</div>
+	<!-- end of popup_wrap -->
+
+	<script type="text/javascript">
+	var initBody
+	function beforePrint(){
+		initBody = $('body').html();
+		document.body.innerHTML = $('.p_contents').html();
+	}
+	function afterPrint(){
+		document.body.innerHTML = initBody;
+	}
+	function printArea() {
+		window.onbeforeprint = beforePrint;
+		window.onafterprint = afterPrint;
+		window.print();
+	}
+	</script>
+
+</body>
+</html>

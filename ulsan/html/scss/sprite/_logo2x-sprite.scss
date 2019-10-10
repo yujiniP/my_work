@@ -1,0 +1,202 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$logo2x-logo-foot-name: 'logo2x-logo_foot';
+$logo2x-logo-foot-x: 0px;
+$logo2x-logo-foot-y: 67px;
+$logo2x-logo-foot-offset-x: 0px;
+$logo2x-logo-foot-offset-y: -67px;
+$logo2x-logo-foot-width: 100px;
+$logo2x-logo-foot-height: 22px;
+$logo2x-logo-foot-total-width: 105px;
+$logo2x-logo-foot-total-height: 89px;
+$logo2x-logo-foot-image: '../images/sprite/logo2x.png';
+$logo2x-logo-foot: (0px, 67px, 0px, -67px, 100px, 22px, 105px, 89px, '../images/sprite/logo2x.png', 'logo2x-logo_foot', );
+$logo2x-logo-main-name: 'logo2x-logo_main';
+$logo2x-logo-main-x: 0px;
+$logo2x-logo-main-y: 34px;
+$logo2x-logo-main-offset-x: 0px;
+$logo2x-logo-main-offset-y: -34px;
+$logo2x-logo-main-width: 105px;
+$logo2x-logo-main-height: 23px;
+$logo2x-logo-main-total-width: 105px;
+$logo2x-logo-main-total-height: 89px;
+$logo2x-logo-main-image: '../images/sprite/logo2x.png';
+$logo2x-logo-main: (0px, 34px, 0px, -34px, 105px, 23px, 105px, 89px, '../images/sprite/logo2x.png', 'logo2x-logo_main', );
+$logo2x-logo-sub-name: 'logo2x-logo_sub';
+$logo2x-logo-sub-x: 0px;
+$logo2x-logo-sub-y: 0px;
+$logo2x-logo-sub-offset-x: 0px;
+$logo2x-logo-sub-offset-y: 0px;
+$logo2x-logo-sub-width: 105px;
+$logo2x-logo-sub-height: 24px;
+$logo2x-logo-sub-total-width: 105px;
+$logo2x-logo-sub-total-height: 89px;
+$logo2x-logo-sub-image: '../images/sprite/logo2x.png';
+$logo2x-logo-sub: (0px, 0px, 0px, 0px, 105px, 24px, 105px, 89px, '../images/sprite/logo2x.png', 'logo2x-logo_sub', );
+$logo2x-logo-foot-2x-name: 'logo2x-logo_foot@2x';
+$logo2x-logo-foot-2x-x: 0px;
+$logo2x-logo-foot-2x-y: 134px;
+$logo2x-logo-foot-2x-offset-x: 0px;
+$logo2x-logo-foot-2x-offset-y: -134px;
+$logo2x-logo-foot-2x-width: 200px;
+$logo2x-logo-foot-2x-height: 44px;
+$logo2x-logo-foot-2x-total-width: 210px;
+$logo2x-logo-foot-2x-total-height: 178px;
+$logo2x-logo-foot-2x-image: '../images/sprite/logo2x@2x.png';
+$logo2x-logo-foot-2x: (0px, 134px, 0px, -134px, 200px, 44px, 210px, 178px, '../images/sprite/logo2x@2x.png', 'logo2x-logo_foot@2x', );
+$logo2x-logo-main-2x-name: 'logo2x-logo_main@2x';
+$logo2x-logo-main-2x-x: 0px;
+$logo2x-logo-main-2x-y: 68px;
+$logo2x-logo-main-2x-offset-x: 0px;
+$logo2x-logo-main-2x-offset-y: -68px;
+$logo2x-logo-main-2x-width: 210px;
+$logo2x-logo-main-2x-height: 46px;
+$logo2x-logo-main-2x-total-width: 210px;
+$logo2x-logo-main-2x-total-height: 178px;
+$logo2x-logo-main-2x-image: '../images/sprite/logo2x@2x.png';
+$logo2x-logo-main-2x: (0px, 68px, 0px, -68px, 210px, 46px, 210px, 178px, '../images/sprite/logo2x@2x.png', 'logo2x-logo_main@2x', );
+$logo2x-logo-sub-2x-name: 'logo2x-logo_sub@2x';
+$logo2x-logo-sub-2x-x: 0px;
+$logo2x-logo-sub-2x-y: 0px;
+$logo2x-logo-sub-2x-offset-x: 0px;
+$logo2x-logo-sub-2x-offset-y: 0px;
+$logo2x-logo-sub-2x-width: 210px;
+$logo2x-logo-sub-2x-height: 48px;
+$logo2x-logo-sub-2x-total-width: 210px;
+$logo2x-logo-sub-2x-total-height: 178px;
+$logo2x-logo-sub-2x-image: '../images/sprite/logo2x@2x.png';
+$logo2x-logo-sub-2x: (0px, 0px, 0px, 0px, 210px, 48px, 210px, 178px, '../images/sprite/logo2x@2x.png', 'logo2x-logo_sub@2x', );
+$logo2x-width: 105px;
+$logo2x-height: 89px;
+$logo2x-image: '../images/sprite/logo2x.png';
+$logo2x-sprites: ($logo2x-logo-foot, $logo2x-logo-main, $logo2x-logo-sub, );
+$logo2x: (105px, 89px, '../images/sprite/logo2x.png', $logo2x-sprites, );
+$retina-spritesheet-width: 210px;
+$retina-spritesheet-height: 178px;
+$retina-spritesheet-image: '../images/sprite/logo2x@2x.png';
+$retina-spritesheet-sprites: ($logo2x-logo-foot-2x, $logo2x-logo-main-2x, $logo2x-logo-sub-2x, );
+$retina-spritesheet: (210px, 178px, '../images/sprite/logo2x@2x.png', $retina-spritesheet-sprites, );
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+//
+// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+$logo2x-logo-foot-group-name: 'logo2x-logo_foot';
+$logo2x-logo-foot-group: ('logo2x-logo_foot', $logo2x-logo-foot, $logo2x-logo-foot-2x, );
+$logo2x-logo-main-group-name: 'logo2x-logo_main';
+$logo2x-logo-main-group: ('logo2x-logo_main', $logo2x-logo-main, $logo2x-logo-main-2x, );
+$logo2x-logo-sub-group-name: 'logo2x-logo_sub';
+$logo2x-logo-sub-group: ('logo2x-logo_sub', $logo2x-logo-sub, $logo2x-logo-sub-2x, );
+$retina-groups: ($logo2x-logo-foot-group, $logo2x-logo-main-group, $logo2x-logo-sub-group, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//   It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+//
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+//   This yields the same output as CSS retina template but can be overridden in SCSS
+//
+// @include retina-sprites($retina-groups);
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

@@ -1,0 +1,770 @@
+@charset "UTF-8";
+
+@include retina-sprites($retina-groups);
+
+body._noScroll{
+	overflow: hidden;
+}
+
+.popup_wrap{
+	display: none;
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	padding:50px;
+	z-index: 9900;
+	overflow-y:auto;
+	-webkit-overflow-scrolling: touch;
+	scroll-snap-type: mandatory;
+	-webkit-scroll-snap-type: mandatory;
+	background:rgba(0, 0, 0, 0.6);
+	&.open_popup{
+		display: block;
+	}
+	.popup_container{
+		position: relative;
+		width:800px;
+		margin:0 auto;
+		z-index: 9900;
+		background-color: #fff;
+		.p_header{
+			position: relative;
+			text-align: center;
+			background:url('../images/bg_popup_header.jpg') repeat-y 50% 0;
+			.title{
+				display: block;
+				height:60px;
+				line-height: 60px;
+				font-size:20px;
+				color:#fff;
+			}
+			.btn_close{
+				position:absolute;
+				right:15px;
+				top:15px;
+				@include texthide();
+				@include sprite( $icons-ic_popup_close ) ;
+			}
+		}
+		.p_contents{
+			position: relative;
+			padding:50px 40px 40px;
+			font-size:16px;
+			.ct_apply_result_pass{
+				.tit{
+					margin-bottom: 40px;
+					font-size:40px;
+					line-height: 1.25;
+					font-weight: 200;
+					strong{
+						color:#3e9ebb;
+					}
+				}
+				.desc{
+					margin-bottom: 60px;
+					font-size:18px;
+					line-height: 1.66;
+				}
+				.t_help{
+					font-size:14px;
+				}
+			}
+			.ct_apply_result_fail{
+				.tit{
+					margin-bottom: 30px;
+					font-size:20px;
+				}
+				.desc{
+					font-size:16px;
+					line-height: 1.62;
+				}
+			}
+		}
+
+		// 직무소개 내부
+		.ct_task_info{
+			dl{
+				padding-left: 40px;
+				dt{
+					position: relative;
+					margin-bottom: 15px;
+					font-size:18px;
+					line-height: 28px;
+					font-weight: bold;
+					&:before{
+						content:"";
+						display: block;
+						position: absolute;
+						left:-40px;
+						top:0;
+						@include sprite( $icons-ic_qna ) ;
+
+					}
+				}
+				dd{
+					margin-bottom: 50px;
+					font-size:16px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		// 우편번호 찾기 내부
+		.ct_addr_find{
+			.bx_srch_addr{
+				margin-bottom: 50px;
+				.srch_form{
+					position: relative;
+					margin-bottom: 15px;
+					padding-right: 110px;
+					border:1px solid #969696;
+					height: 45px;
+					.iptxt_default{
+						border:0;
+						height: 42px;
+						line-height: 42px;
+						letter-spacing: -1px;
+					}
+					.btn_srch_addr{
+						display: block;
+						width:100px;
+						height:34px;
+						text-align: center;
+						color:#fff;
+						position: absolute;
+						right:5px;
+						top:5px;
+						font-size:14px;
+						font-weight: bold;
+						border:0;
+						background-color: #969696;
+					}
+				}
+				.srch_txt{
+					font-size:14px;
+					color:#969696;
+				}
+			}
+			.bx_srch_tb{
+				margin-bottom: 50px;
+				.bx_bd_top{
+					padding-bottom: 20px;
+					.bd_num{
+						vertical-align: bottom;
+						font-size:16px;
+						line-height: 1;
+						span{
+							font-weight: bold;
+							color:#0064b0;
+						}
+					}
+				}
+				.table{
+					.cell.addr_txt{
+						text-align: left;
+						.lst_addr{
+							li{
+								height:30px;
+								line-height: 30px;
+								margin-bottom: 10px;
+								font-size:16px;
+								&:last-child{
+									margin-bottom: 0;
+								}
+								.label{
+									display: inline-block;
+									width:80px;
+									line-height: 30px;
+									margin-right: 20px;
+									color:#959595;
+									font-weight: bold;
+									background-color: #f4f4f4;
+									text-align: center;
+									font-size:14px;
+								}
+							}
+						}
+					}
+					.cell.addr_num{
+						color:#959595;
+						strong{
+							display: block;
+							margin-bottom: 10px;
+							font-weight: normal;
+							color:#0064b0;
+						}
+					}
+				}
+			}
+		}
+
+		// 인쇄미리보기 내부
+		.ct_print_view{
+			.bx_pt_top{
+				line-height: 44px;
+				margin-bottom: 25px;
+				@include after();
+				.tit{
+					font-size:20px;
+				}
+				.btns{
+					float:right;
+					.btn_df{
+						margin:0;
+					}
+				}
+			}
+			.bx_pt_tb{
+				margin-bottom: 60px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+				.wrt_part{
+					display: block;
+					font-size:18px;
+					font-weight: bold;
+					margin-bottom: 20px;
+				}
+				.table{
+					.cell{
+						padding:12px 10px;
+					}
+					.cell_w_name{
+						width:140px;
+						text-align: left;
+						font-weight: bold;
+						padding-left: 30px;
+						line-height: 1.6;
+					}
+					.cell_w_view{
+						text-align: left;
+						line-height: 2;
+						.lst_wrt{
+							font-size:0;
+							margin-bottom: 15px;
+							&:last-child{
+								margin-bottom: 0;
+							}
+							li{
+								position: relative;
+								display: inline-block;
+								padding-right: 21px;
+								margin-right: 20px;
+								font-size:16px;
+								&:after{
+									content:"";
+									display: block;
+									position: absolute;
+									right:0;
+									top:50%;
+									margin-top: -5px;
+									width:1px;
+									height:10px;
+									background-color: #969696;
+								}
+								&:last-child{
+									padding-right: 0;
+									margin-right: 0;
+									&:after{
+										display: none;
+									}
+								}
+							}
+						}
+						.txt_my_story{
+							line-height: 1.6;
+							padding:10px 20px;
+							dt{
+								font-weight: bold;
+								margin-bottom: 15px;
+							}
+						}
+					}
+				}
+				&.bx_mystory{
+					.table:last-child{
+						border-top: 0;
+					}
+				}
+			}
+		}
+
+		// 개인정보처리방침 내부
+		.ct_privacy_policy{
+			.bx_agree{
+				font-size:16px;
+				> p{
+					margin-bottom: 30px;
+				}
+				> dl {
+					margin-bottom: 20px;
+					dt{
+						margin-bottom: 10px;
+						font-size:20px;
+					}
+				}
+			}
+		}
+
+	}
+	.popup_dimd{
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 9000;
+		background: #000;
+		opacity: .5;
+	}
+
+	// 지원결과 틀
+	&.pop_apply_result{
+		.popup_container{
+			// top:50%;
+			// transform:translateY(-50%);
+		}
+		.p_contents{
+			background:#fff url('../images/bg_apply_result_popup_cont.png') no-repeat right bottom;
+		}
+	}
+
+	// 직무소개 틀
+	&.pop_task_info{
+		.popup_container{
+		}
+		.p_header{
+			text-align: left;
+			padding: 110px 40px 30px 40px;
+			.title{
+				margin-bottom: 15px;
+				height:auto;
+				line-height: 1;
+				font-size:40px;
+				font-weight: normal;
+				letter-spacing:-1px;
+			}
+			.desc{
+				color:#fff;
+				font-size:18px;
+			}
+		}
+	}
+
+	// 우편번호 찾기 틀
+	&.pop_addr_find{
+		.popup_container{
+			.p_contents{
+				padding:40px 40px 40px;
+			}
+		}
+	}
+
+	// 인쇄미리보기 틀
+	&.pop_print_view{
+		.popup_container{
+			width:910px;
+		}
+	}
+
+	// 사이트맵
+	&.popup_sitemap{
+		padding:0;
+		background:transparent;
+		&.open_popup{
+			.popup_container{
+				height: 100%;
+				-webkit-animation: openPopHeight .5s alternate;
+				-webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+				animation: openPopHeight .5s alternate;
+				animation-timing-function: cubic-bezier(1, 0, 0, 1);
+				.p_contents{
+					opacity: 0;
+		      	opacity: 1 \0/IE9;
+					visibility: visible;
+					-webkit-animation: openPopOpacity forwards .6s;
+					-webkit-animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+					-webkit-animation-delay: .5s;
+					animation: openPopOpacity forwards .6s;
+					animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+					animation-delay: .5s;
+				}
+			}
+		}
+		.btn_close{
+			position:absolute;
+			right:15px;
+			top:15px;
+			z-index: 9999;
+			@include texthide();
+			@include sprite( $icons-ic_popup_close ) ;
+		}
+		.popup_container{
+			position: absolute;
+			top:50%;
+			transform:translateY(-50%);
+			width:100%;
+			height:0;
+			background-color: #1973b8;
+			overflow: hidden;
+			.p_contents{
+				padding:0;
+				position: absolute;
+				top:50%;
+				transform:translateY(-50%);
+				width:100%;
+			}
+		}
+		.lst_sitemap{
+			text-align: center;
+			color:#fff;
+			transition:all 2s;
+			a{
+				color:#fff;
+			}
+			> li{
+				display: inline-block;
+				width:200px;
+				margin:0 45px;
+				vertical-align: top;
+				text-align: left;
+				> strong{
+					display: block;
+					margin-bottom: 50px;
+					padding-left: 20px;
+					height:80px;
+					line-height: 80px;
+					border-bottom:4px solid #fff;
+					font-size:30px;
+					font-weight: bold;
+				}
+			}
+		}
+		.lst_depth2{
+			> li {
+				margin-bottom: 25px;
+				padding-left: 20px;
+				> a {
+					display: block;
+					font-size:20px;
+					font-weight: bold;
+				}
+			}
+		}
+		.lst_depth3{
+			padding-top: 20px;
+			> li{
+				padding-left: 15px;
+				line-height: 1.6;
+				font-weight: 200;
+				> a{
+					font-size:18px;
+				}
+			}
+		}
+	}
+}
+
+// 모바일&패드
+@include tab {
+
+	.popup_wrap{
+		height:100vh;
+		padding:15px 15px 50px;
+		.popup_container{
+			width:auto;
+			margin-left:0px;
+			.p_header{
+				.title{
+					height:60px;
+					line-height: 60px;
+					font-size:16px;
+				}
+				.btn_close{
+					right:15px;
+					top:50%;
+					transform:translateY(-50%);
+					@include retina-sprite( $icons2x-ic_popup_close-group ) ;
+				}
+			}
+			.p_contents{
+				padding:20px;
+				font-size:16px;
+				.ct_apply_result_pass{
+					.tit{
+						margin-bottom: 20px;
+						font-size:18px;
+					}
+					.desc{
+						margin-bottom: 30px;
+						font-size:14px;
+					}
+				}
+				.ct_apply_result_fail{
+					.tit{
+						margin-bottom: 20px;
+						font-size:18px;
+					}
+					.desc{
+						font-size:14px;
+					}
+				}
+			}
+
+			// 직무 소개 내부
+			.ct_task_info{
+				padding-bottom: 100px;
+				dl{
+					padding-left: 20px;
+					dt{
+						margin-bottom: 10px;
+						font-size:14px;
+						line-height: 1.5;
+						&:before{
+							left:-20px;
+							top:3px;
+							@include retina-sprite( $icons2x-ic_qna-group ) ;
+						}
+					}
+					dd{
+						margin-bottom: 20px;
+						font-size:14px;
+					}
+				}
+			}
+
+			// 우편번호 찾기 내부
+			.ct_addr_find{
+				.bx_srch_addr{
+					margin-bottom: 20px;
+					.srch_form{
+						margin-bottom: 10px;
+						padding-right: 70px;
+						height: 45px;
+						.iptxt_default{
+							font-size:14px;
+							padding:0 10px;
+						}
+						.btn_srch_addr{
+							width:60px;
+							font-size:12px;
+						}
+					}
+					.srch_txt{
+						font-size:14px;
+						color:#969696;
+					}
+				}
+				.bx_srch_tb{
+					margin-bottom: 20px;
+					.bx_bd_top{
+						padding-bottom: 10px;
+						.bd_num{
+							font-size:14px;
+						}
+					}
+					.table{
+						.cell.addr_txt{
+							padding:0;
+							margin-bottom: 10px;
+							.lst_addr{
+								li{
+									height:30px;
+									line-height: 30px;
+									margin-bottom: 5px;
+									font-size:13px;
+									.label{
+										display: inline-block;
+										width:60px;
+										line-height: 30px;
+										margin-right:5px;
+										font-size:11px;
+									}
+								}
+							}
+						}
+						.cell.addr_num{
+							width:100%;
+							text-align: left;
+							line-height: 1;
+							strong{
+								display: inline-block;
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+
+			// 개인정보처리방침 내부
+			.ct_privacy_policy{
+				.bx_agree{
+					font-size:14px;
+					> p{
+						margin-bottom: 10px;
+					}
+					> dl {
+						margin-bottom: 10px;
+						dt{
+							margin-bottom: 5px;
+							font-size:16px;
+						}
+					}
+				}
+			}
+		}
+
+		// 직무소개 틀
+		&.pop_task_info{
+			.p_header{
+				padding: 30px 20px 10px 20px;
+				.title{
+					height:auto;
+					line-height: 1;
+					margin-bottom: 5px;
+					font-size:18px;
+				}
+				.desc{
+					color:#fff;
+					font-size:14px;
+				}
+				.btn_close{
+					top:15px;
+					transform:translateY(0);
+				}
+			}
+		}
+
+		// 우편번호찾기 틀
+		&.pop_addr_find{
+			.popup_container{
+				.p_contents{
+					padding:15px;
+				}
+				.tb_srch_addr{
+					.row{
+						padding:10px 0;
+					}
+					.cell{
+						&.number{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+
+		// 인쇄미리보기 틀
+		&.pop_print_view{
+			.popup_container{
+				width:auto;
+			}
+		}
+
+		// 사이트맵
+		&.popup_sitemap{
+			.lst_sitemap{
+				> li{
+					width:180px;
+					margin:0 20px;
+				}
+			}
+		}
+
+	}
+
+}
+
+@include mob{
+
+	.popup_wrap{
+
+		// 사이트맵
+		&.popup_sitemap{
+			.btn_close{
+				right:15px;
+				top:15px;
+				@include retina-sprite( $icons2x-ic_popup_close-group ) ;
+			}
+			.popup_container{
+				overflow-y: auto;
+				-webkit-overflow-scrolling: touch;
+				scroll-snap-type: mandatory;
+				-webkit-scroll-snap-type: mandatory;
+				.p_contents{
+					padding:30px;
+					position: relative;
+					top:0;
+					transform: translateY(0);
+				}
+			}
+			.lst_sitemap{
+				> li{
+					display: block;
+					width:100%;
+					margin:0 0 50px 0;
+					> strong{
+						margin-bottom: 20px;
+						padding-left: 10px;
+						height:40px;
+						line-height: 40px;
+						border-bottom:2px solid #fff;
+						font-size:16px;
+					}
+				}
+			}
+			.lst_depth2{
+				> li {
+					margin-bottom: 10px;
+					padding-left: 10px;
+					> a {
+						font-size:14px;
+					}
+				}
+			}
+			.lst_depth3{
+				padding-top: 10px;
+				> li{
+					padding-left: 10px;
+					> a{
+						font-size:14px;
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+
+@-webkit-keyframes openPopHeight {
+	0%{height:0; }
+	100%{height:100%;}
+}
+@-moz-keyframes openPopHeight {
+	0%{height:0; }
+	100%{height:100%;}
+}
+@keyframes openPopHeight {
+	0%{height:0; }
+	100%{height:100%;}
+}
+
+@-webkit-keyframes openPopOpacity {
+	0%{opacity:0; }
+	100%{opacity:1;}
+}
+@-moz-keyframes openPopOpacity {
+	0%{opacity:0; }
+	100%{opacity:1;}
+}
+@keyframes openPopOpacity {
+	0%{opacity:0; }
+	100%{opacity:1;}
+}

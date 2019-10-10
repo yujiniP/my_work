@@ -1,0 +1,345 @@
+@charset "UTF-8";
+
+@include retina-sprites($retina-groups);
+
+.top_process {
+	position: relative;
+	a {
+		position: absolute;
+		top:0;
+		left:0;
+	}
+	.btn_df.w190 {
+		width: 190px;
+		padding: 9px 0;
+		margin:0;
+		span{
+			display:inline-block;
+			vertical-align: middle;
+		}
+
+		.icon_play {
+			display: inline-block;
+			@include sprite($icons-ic_play);
+			vertical-align: middle;
+			margin-right: 9px;
+		}
+		&:hover .icon_play{
+			@include sprite($icons-ic_play_hover);
+		}
+	}
+}
+
+
+.process_bg {
+	height:60px;
+	background:#0064b0;
+	text-align: center;
+	ul {
+		li{
+			display:inline-block;
+			color:#fff;
+			font-size:18px;
+			padding-top:13px;
+      margin-left:31px;
+      
+
+			strong{
+				display:inline-block;
+				position:relative;
+				padding-right:9px;
+			}
+
+			&:after {
+				content: '';
+				display: inline-block;
+				@include sprite($icons-ic_procs_arrow);
+				border-radius: 45px;
+				vertical-align: middle;
+				margin-left:40px;
+			}
+			&:last-child:after{
+				content:none;
+				display: none;
+			}
+		}
+
+	}
+}
+
+.desc_area{
+	display:inline-block;
+	position:relative;
+	width:100%;
+	margin-bottom: 120px;
+
+	img {
+		float:left;
+		position:relative;
+    z-index: 2;
+    &.v2{
+      padding-left:19px;
+      max-width: 460px;
+    }
+	}
+
+	.bx_txt_area {
+		position:absolute;
+		right:0;
+		bottom:-50px;
+
+		dl.bx_txt{
+			width:810px;
+			min-height:320px;
+			padding:50px 30px 50px 360px;
+			background:#fff;
+			z-index: 1;
+			dt{
+				font-size:20px;
+				color:#0064b0;
+				font-weight:bold;
+				padding-bottom: 8px;
+			}
+			dd{
+				font-size:16px;
+				line-height: 1.625em;
+				padding-bottom:8px;
+				position:relative;
+				&.dot{
+					padding-left:11px;
+					&:after{
+						content:'';
+						width:3px;
+						height:3px;
+						position: absolute;
+						display: block;
+						top: 40%;
+						left: 2px;
+						background-color:#0064b0;
+					}
+				}
+				& span {
+					padding-top:5px;
+					display:block;
+				}
+				&.dot{
+					padding-bottom:0px;
+				}
+			}
+		}
+	}
+	&.raw{
+		.bx_txt_area {
+			dl.bx_txt {
+				padding-top:130px;
+			}
+		}
+	}
+	&.oppos {
+		img {
+			float: right;
+
+		}
+		.bx_txt_area {
+			left:0;
+
+			dl.bx_txt {
+			padding:50px 0 50px 30px;
+			}
+
+		}
+
+	}
+}
+.over_wide.over_bg.sub2_cont{padding-top:80px}
+.bx_video_title {
+	text-align: center;
+	display:block;
+	padding:80px 0 40px ;
+	font-size:20px;
+}
+.bx_video {
+	margin-bottom: 150px;
+}
+
+// 알루미늄
+.ct_aluminum{
+	padding-bottom: 150px;
+	.bg_wide{
+		margin-bottom: 70px;
+		background: #e3f2f9 url('../images/bg_fat_rolled.jpg') no-repeat right bottom;
+		background-size: auto 100%;
+		.cont_wide_inner_center{
+			padding:80px 370px 80px 0;
+			p{
+				font-size:20px;
+				line-height: 1.6;
+				&:first-child{
+					margin-bottom: 7px;
+					span{
+						font-size:50px;
+						font-weight: 100;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// 모바일&패드
+@include tab {
+
+
+
+	.top_process {
+		img{
+			width:100%;
+		}
+
+		.btn_df.w190 {
+			width: auto;
+			padding: 5px 10px;
+			position: initial;
+
+			.icon_play {
+				@include retina-sprite( $icons2x-ic_play-group);
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+			&:hover .icon_play{
+				@include retina-sprite( $icons2x-ic_play_hover-group);
+			}
+		}
+	}
+
+	.process_bg {
+		height:auto;
+		ul{
+			li{
+				display: inline-block;
+				margin-left:0;
+				font-size: 0;
+        text-align: left;
+        padding-top:0;
+				&:first-child{padding-top:0}
+				&:after {
+					@include retina-sprite($icons2x-ic_procs_arrow-group);
+          margin-left:0px;
+          margin-right:10px;
+        }
+        strong{
+          font-size: 14px;
+          vertical-align: middle;
+        }
+			}
+		}
+	}
+	.desc_area {
+		margin-bottom: 60px;
+		img {
+      width:100%;
+      &.v2 {
+        padding-left: 0;
+        max-width:auto;
+        display: none;
+      }
+		}
+		.bx_txt_area  {
+			position: initial;
+			float: left;
+			width: 100%;
+			dl.bx_txt {
+				width:100%;
+				padding: 25px 20px;
+				min-height: auto;
+				dt{
+					font-size:14px;
+				}
+				dd{
+					font-size:13px;
+					br{
+						display:none;
+					}
+				}
+			}
+		}
+		&.raw{
+			.bx_txt_area {
+				dl.bx_txt {
+					padding-top:25px;
+				}
+			}
+		}
+		&.oppos {
+			img {
+				float: left;
+
+			}
+			.bx_txt_area {
+
+
+				dl.bx_txt {
+					padding: 25px 20px;
+				}
+
+			}
+
+		}
+	}
+	.bx_video_title {
+		padding: 40px 0 20px;
+		font-size: 14px;
+	}
+	.bx_video {
+		position: relative;
+		width: 100%;
+		padding-bottom: 56.25%;
+		margin-bottom: 0;
+		& iframe {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.over_wide.over_bg.sub2_cont{padding-top:40px}
+
+	// 알루미늄
+	.ct_aluminum{
+		padding-bottom: 30px;
+		.bg_wide{
+			margin-bottom: 20px;
+			background: #e3f2f9 url('../images/bg_fat_rolled.jpg') no-repeat right bottom;
+			background-size: 30% auto;
+			.cont_wide_inner_center{
+				padding:30px 20% 30px 15px;
+				p{
+					font-size:14px;
+					&:first-child{
+						margin-bottom: 7px;
+						span{
+							font-size:18px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@include mob-large{
+
+  .desc_area {
+    img {
+      &.v2 {
+        display: block;
+      }
+    }
+  }
+
+}
+
+@include mob-mid{
+
+}

@@ -1,0 +1,346 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$txt2x-automotive-name: 'txt2x-automotive';
+$txt2x-automotive-x: 165px;
+$txt2x-automotive-y: 0px;
+$txt2x-automotive-offset-x: -165px;
+$txt2x-automotive-offset-y: 0px;
+$txt2x-automotive-width: 170px;
+$txt2x-automotive-height: 26px;
+$txt2x-automotive-total-width: 335px;
+$txt2x-automotive-total-height: 182px;
+$txt2x-automotive-image: '../images/sprite/txt2x.png';
+$txt2x-automotive: (165px, 0px, -165px, 0px, 170px, 26px, 335px, 182px, '../images/sprite/txt2x.png', 'txt2x-automotive', );
+$txt2x-can-name: 'txt2x-can';
+$txt2x-can-x: 0px;
+$txt2x-can-y: 158px;
+$txt2x-can-offset-x: 0px;
+$txt2x-can-offset-y: -158px;
+$txt2x-can-width: 56px;
+$txt2x-can-height: 24px;
+$txt2x-can-total-width: 335px;
+$txt2x-can-total-height: 182px;
+$txt2x-can-image: '../images/sprite/txt2x.png';
+$txt2x-can: (0px, 158px, 0px, -158px, 56px, 24px, 335px, 182px, '../images/sprite/txt2x.png', 'txt2x-can', );
+$txt2x-green-name: 'txt2x-green';
+$txt2x-green-x: 165px;
+$txt2x-green-y: 36px;
+$txt2x-green-offset-x: -165px;
+$txt2x-green-offset-y: -36px;
+$txt2x-green-width: 135px;
+$txt2x-green-height: 31px;
+$txt2x-green-total-width: 335px;
+$txt2x-green-total-height: 182px;
+$txt2x-green-image: '../images/sprite/txt2x.png';
+$txt2x-green: (165px, 36px, -165px, -36px, 135px, 31px, 335px, 182px, '../images/sprite/txt2x.png', 'txt2x-green', );
+$txt2x-new-name: 'txt2x-new';
+$txt2x-new-x: 0px;
+$txt2x-new-y: 87px;
+$txt2x-new-offset-x: 0px;
+$txt2x-new-offset-y: -87px;
+$txt2x-new-width: 96px;
+$txt2x-new-height: 36px;
+$txt2x-new-total-width: 335px;
+$txt2x-new-total-height: 182px;
+$txt2x-new-image: '../images/sprite/txt2x.png';
+$txt2x-new: (0px, 87px, 0px, -87px, 96px, 36px, 335px, 182px, '../images/sprite/txt2x.png', 'txt2x-new', );
+$txt2x-shaping-name: 'txt2x-shaping';
+$txt2x-shaping-x: 252px;
+$txt2x-shaping-y: 87px;
+$txt2x-shaping-offset-x: -252px;
+$txt2x-shaping-offset-y: -87px;
+$txt2x-shaping-width: 70px;
+$txt2x-shaping-height: 18px;
+$txt2x-shaping-total-width: 335px;
+$txt2x-shaping-total-height: 182px;
+$txt2x-shaping-image: '../images/sprite/txt2x.png';
+$txt2x-shaping: (252px, 87px, -252px, -87px, 70px, 18px, 335px, 182px, '../images/sprite/txt2x.png', 'txt2x-shaping', );
+$txt2x-specialties-name: 'txt2x-specialties';
+$txt2x-specialties-x: 0px;
+$txt2x-specialties-y: 0px;
+$txt2x-specialties-offset-x: 0px;
+$txt2x-specialties-offset-y: 0px;
+$txt2x-specialties-width: 155px;
+$txt2x-specialties-height: 32px;
+$txt2x-specialties-total-width: 335px;
+$txt2x-specialties-total-height: 182px;
+$txt2x-specialties-image: '../images/sprite/txt2x.png';
+$txt2x-specialties: (0px, 0px, 0px, 0px, 155px, 32px, 335px, 182px, '../images/sprite/txt2x.png', 'txt2x-specialties', );
+$txt2x-sustainable-name: 'txt2x-sustainable';
+$txt2x-sustainable-x: 0px;
+$txt2x-sustainable-y: 133px;
+$txt2x-sustainable-offset-x: 0px;
+$txt2x-sustainable-offset-y: -133px;
+$txt2x-sustainable-width: 98px;
+$txt2x-sustainable-height: 15px;
+$txt2x-sustainable-total-width: 335px;
+$txt2x-sustainable-total-height: 182px;
+$txt2x-sustainable-image: '../images/sprite/txt2x.png';
+$txt2x-sustainable: (0px, 133px, 0px, -133px, 98px, 15px, 335px, 182px, '../images/sprite/txt2x.png', 'txt2x-sustainable', );
+$txt2x-thebest-name: 'txt2x-thebest';
+$txt2x-thebest-x: 0px;
+$txt2x-thebest-y: 42px;
+$txt2x-thebest-offset-x: 0px;
+$txt2x-thebest-offset-y: -42px;
+$txt2x-thebest-width: 135px;
+$txt2x-thebest-height: 35px;
+$txt2x-thebest-total-width: 335px;
+$txt2x-thebest-total-height: 182px;
+$txt2x-thebest-image: '../images/sprite/txt2x.png';
+$txt2x-thebest: (0px, 42px, 0px, -42px, 135px, 35px, 335px, 182px, '../images/sprite/txt2x.png', 'txt2x-thebest', );
+$txt2x-worldtogether-name: 'txt2x-worldtogether';
+$txt2x-worldtogether-x: 106px;
+$txt2x-worldtogether-y: 87px;
+$txt2x-worldtogether-offset-x: -106px;
+$txt2x-worldtogether-offset-y: -87px;
+$txt2x-worldtogether-width: 136px;
+$txt2x-worldtogether-height: 18px;
+$txt2x-worldtogether-total-width: 335px;
+$txt2x-worldtogether-total-height: 182px;
+$txt2x-worldtogether-image: '../images/sprite/txt2x.png';
+$txt2x-worldtogether: (106px, 87px, -106px, -87px, 136px, 18px, 335px, 182px, '../images/sprite/txt2x.png', 'txt2x-worldtogether', );
+$txt2x-automotive-2x-name: 'txt2x-automotive@2x';
+$txt2x-automotive-2x-x: 330px;
+$txt2x-automotive-2x-y: 0px;
+$txt2x-automotive-2x-offset-x: -330px;
+$txt2x-automotive-2x-offset-y: 0px;
+$txt2x-automotive-2x-width: 340px;
+$txt2x-automotive-2x-height: 52px;
+$txt2x-automotive-2x-total-width: 670px;
+$txt2x-automotive-2x-total-height: 364px;
+$txt2x-automotive-2x-image: '../images/sprite/txt2x@2x.png';
+$txt2x-automotive-2x: (330px, 0px, -330px, 0px, 340px, 52px, 670px, 364px, '../images/sprite/txt2x@2x.png', 'txt2x-automotive@2x', );
+$txt2x-can-2x-name: 'txt2x-can@2x';
+$txt2x-can-2x-x: 0px;
+$txt2x-can-2x-y: 316px;
+$txt2x-can-2x-offset-x: 0px;
+$txt2x-can-2x-offset-y: -316px;
+$txt2x-can-2x-width: 112px;
+$txt2x-can-2x-height: 48px;
+$txt2x-can-2x-total-width: 670px;
+$txt2x-can-2x-total-height: 364px;
+$txt2x-can-2x-image: '../images/sprite/txt2x@2x.png';
+$txt2x-can-2x: (0px, 316px, 0px, -316px, 112px, 48px, 670px, 364px, '../images/sprite/txt2x@2x.png', 'txt2x-can@2x', );
+$txt2x-green-2x-name: 'txt2x-green@2x';
+$txt2x-green-2x-x: 330px;
+$txt2x-green-2x-y: 72px;
+$txt2x-green-2x-offset-x: -330px;
+$txt2x-green-2x-offset-y: -72px;
+$txt2x-green-2x-width: 270px;
+$txt2x-green-2x-height: 62px;
+$txt2x-green-2x-total-width: 670px;
+$txt2x-green-2x-total-height: 364px;
+$txt2x-green-2x-image: '../images/sprite/txt2x@2x.png';
+$txt2x-green-2x: (330px, 72px, -330px, -72px, 270px, 62px, 670px, 364px, '../images/sprite/txt2x@2x.png', 'txt2x-green@2x', );
+$txt2x-new-2x-name: 'txt2x-new@2x';
+$txt2x-new-2x-x: 0px;
+$txt2x-new-2x-y: 174px;
+$txt2x-new-2x-offset-x: 0px;
+$txt2x-new-2x-offset-y: -174px;
+$txt2x-new-2x-width: 192px;
+$txt2x-new-2x-height: 72px;
+$txt2x-new-2x-total-width: 670px;
+$txt2x-new-2x-total-height: 364px;
+$txt2x-new-2x-image: '../images/sprite/txt2x@2x.png';
+$txt2x-new-2x: (0px, 174px, 0px, -174px, 192px, 72px, 670px, 364px, '../images/sprite/txt2x@2x.png', 'txt2x-new@2x', );
+$txt2x-shaping-2x-name: 'txt2x-shaping@2x';
+$txt2x-shaping-2x-x: 504px;
+$txt2x-shaping-2x-y: 174px;
+$txt2x-shaping-2x-offset-x: -504px;
+$txt2x-shaping-2x-offset-y: -174px;
+$txt2x-shaping-2x-width: 140px;
+$txt2x-shaping-2x-height: 36px;
+$txt2x-shaping-2x-total-width: 670px;
+$txt2x-shaping-2x-total-height: 364px;
+$txt2x-shaping-2x-image: '../images/sprite/txt2x@2x.png';
+$txt2x-shaping-2x: (504px, 174px, -504px, -174px, 140px, 36px, 670px, 364px, '../images/sprite/txt2x@2x.png', 'txt2x-shaping@2x', );
+$txt2x-specialties-2x-name: 'txt2x-specialties@2x';
+$txt2x-specialties-2x-x: 0px;
+$txt2x-specialties-2x-y: 0px;
+$txt2x-specialties-2x-offset-x: 0px;
+$txt2x-specialties-2x-offset-y: 0px;
+$txt2x-specialties-2x-width: 310px;
+$txt2x-specialties-2x-height: 64px;
+$txt2x-specialties-2x-total-width: 670px;
+$txt2x-specialties-2x-total-height: 364px;
+$txt2x-specialties-2x-image: '../images/sprite/txt2x@2x.png';
+$txt2x-specialties-2x: (0px, 0px, 0px, 0px, 310px, 64px, 670px, 364px, '../images/sprite/txt2x@2x.png', 'txt2x-specialties@2x', );
+$txt2x-sustainable-2x-name: 'txt2x-sustainable@2x';
+$txt2x-sustainable-2x-x: 0px;
+$txt2x-sustainable-2x-y: 266px;
+$txt2x-sustainable-2x-offset-x: 0px;
+$txt2x-sustainable-2x-offset-y: -266px;
+$txt2x-sustainable-2x-width: 196px;
+$txt2x-sustainable-2x-height: 30px;
+$txt2x-sustainable-2x-total-width: 670px;
+$txt2x-sustainable-2x-total-height: 364px;
+$txt2x-sustainable-2x-image: '../images/sprite/txt2x@2x.png';
+$txt2x-sustainable-2x: (0px, 266px, 0px, -266px, 196px, 30px, 670px, 364px, '../images/sprite/txt2x@2x.png', 'txt2x-sustainable@2x', );
+$txt2x-thebest-2x-name: 'txt2x-thebest@2x';
+$txt2x-thebest-2x-x: 0px;
+$txt2x-thebest-2x-y: 84px;
+$txt2x-thebest-2x-offset-x: 0px;
+$txt2x-thebest-2x-offset-y: -84px;
+$txt2x-thebest-2x-width: 270px;
+$txt2x-thebest-2x-height: 70px;
+$txt2x-thebest-2x-total-width: 670px;
+$txt2x-thebest-2x-total-height: 364px;
+$txt2x-thebest-2x-image: '../images/sprite/txt2x@2x.png';
+$txt2x-thebest-2x: (0px, 84px, 0px, -84px, 270px, 70px, 670px, 364px, '../images/sprite/txt2x@2x.png', 'txt2x-thebest@2x', );
+$txt2x-worldtogether-2x-name: 'txt2x-worldtogether@2x';
+$txt2x-worldtogether-2x-x: 212px;
+$txt2x-worldtogether-2x-y: 174px;
+$txt2x-worldtogether-2x-offset-x: -212px;
+$txt2x-worldtogether-2x-offset-y: -174px;
+$txt2x-worldtogether-2x-width: 272px;
+$txt2x-worldtogether-2x-height: 36px;
+$txt2x-worldtogether-2x-total-width: 670px;
+$txt2x-worldtogether-2x-total-height: 364px;
+$txt2x-worldtogether-2x-image: '../images/sprite/txt2x@2x.png';
+$txt2x-worldtogether-2x: (212px, 174px, -212px, -174px, 272px, 36px, 670px, 364px, '../images/sprite/txt2x@2x.png', 'txt2x-worldtogether@2x', );
+$txt2x-width: 335px;
+$txt2x-height: 182px;
+$txt2x-image: '../images/sprite/txt2x.png';
+$txt2x-sprites: ($txt2x-automotive, $txt2x-can, $txt2x-green, $txt2x-new, $txt2x-shaping, $txt2x-specialties, $txt2x-sustainable, $txt2x-thebest, $txt2x-worldtogether, );
+$txt2x: (335px, 182px, '../images/sprite/txt2x.png', $txt2x-sprites, );
+$retina-spritesheet-width: 670px;
+$retina-spritesheet-height: 364px;
+$retina-spritesheet-image: '../images/sprite/txt2x@2x.png';
+$retina-spritesheet-sprites: ($txt2x-automotive-2x, $txt2x-can-2x, $txt2x-green-2x, $txt2x-new-2x, $txt2x-shaping-2x, $txt2x-specialties-2x, $txt2x-sustainable-2x, $txt2x-thebest-2x, $txt2x-worldtogether-2x, );
+$retina-spritesheet: (670px, 364px, '../images/sprite/txt2x@2x.png', $retina-spritesheet-sprites, );
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+//
+// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+$txt2x-automotive-group-name: 'txt2x-automotive';
+$txt2x-automotive-group: ('txt2x-automotive', $txt2x-automotive, $txt2x-automotive-2x, );
+$txt2x-can-group-name: 'txt2x-can';
+$txt2x-can-group: ('txt2x-can', $txt2x-can, $txt2x-can-2x, );
+$txt2x-green-group-name: 'txt2x-green';
+$txt2x-green-group: ('txt2x-green', $txt2x-green, $txt2x-green-2x, );
+$txt2x-new-group-name: 'txt2x-new';
+$txt2x-new-group: ('txt2x-new', $txt2x-new, $txt2x-new-2x, );
+$txt2x-shaping-group-name: 'txt2x-shaping';
+$txt2x-shaping-group: ('txt2x-shaping', $txt2x-shaping, $txt2x-shaping-2x, );
+$txt2x-specialties-group-name: 'txt2x-specialties';
+$txt2x-specialties-group: ('txt2x-specialties', $txt2x-specialties, $txt2x-specialties-2x, );
+$txt2x-sustainable-group-name: 'txt2x-sustainable';
+$txt2x-sustainable-group: ('txt2x-sustainable', $txt2x-sustainable, $txt2x-sustainable-2x, );
+$txt2x-thebest-group-name: 'txt2x-thebest';
+$txt2x-thebest-group: ('txt2x-thebest', $txt2x-thebest, $txt2x-thebest-2x, );
+$txt2x-worldtogether-group-name: 'txt2x-worldtogether';
+$txt2x-worldtogether-group: ('txt2x-worldtogether', $txt2x-worldtogether, $txt2x-worldtogether-2x, );
+$retina-groups: ($txt2x-automotive-group, $txt2x-can-group, $txt2x-green-group, $txt2x-new-group, $txt2x-shaping-group, $txt2x-specialties-group, $txt2x-sustainable-group, $txt2x-thebest-group, $txt2x-worldtogether-group, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//   It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+//
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+//   This yields the same output as CSS retina template but can be overridden in SCSS
+//
+// @include retina-sprites($retina-groups);
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

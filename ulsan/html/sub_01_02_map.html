@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./include/sub_head_meta.html')
+
+<!-- 서브페이지에는 sub 클래스가 추가됩니다. -->
+<body class="sub">
+
+	<div class="skip-content">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- end of skip-content -->
+
+	<div class="wrap">
+		@@include('./include/header.html')
+
+		<div id="container" class="container">
+
+			<div class="wrap_path_menu">
+				<div class="inner">
+					<a href="/" class="btn_link_home"><i class="icon_go_home">home</i></a>
+					<ol class="lst_menu">
+
+						<!-- 메뉴 활성화 클래스 active -->
+						<li class="">
+							<dl>
+								<dt><button type="button">회사소개</button></dt>
+								<dd>
+									<ul>
+										<li class="current_page"><a href="#;">회사소개</a></li>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li><a href="#;">생산제품</a></li>
+										<li><a href="#;">지속가능성</a></li>
+										<li><a href="#;">인재채용</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">찾아오시는 길</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">회사소개</a></li>
+										<li><a href="#;">주주 정보</a></li>
+										<li class="current_page"><a href="#;">찾아오시는 길</a></li>
+										<li><a href="#;">공지</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<!-- <li>
+							<dl>
+								<dt><button type="button">CI</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">회사 개요</a></li>
+										<li><a href="#;">CEO 인사말</a></li>
+										<li><a href="#;">연혁</a></li>
+										<li><a href="#;">기업문화</a></li>
+										<li class="current_page"><a href="#;">CI</a></li>
+										<li><a href="#;">조직도</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li> -->
+					</ol>
+				</div>
+			</div>
+			<!-- end of wrap_path_menu -->
+
+			<!-- 배경이미지 : 해당 페이지의 경우에는 manufact 클래스가 추가됩니다. -->
+			<div class="wrap_sub_top company">
+				<div class="visual table">
+					<div class="row tit_area">
+						<div class="cell">
+							<h3 class="tit_kr">회사소개</h3>
+							<p class="tit_eng">About US</p>
+						</div>
+					</div>
+					<!-- end of tit_area -->
+
+				</div>
+				<!-- end of visual -->
+
+			</div>
+			<!-- end of wrap_sub_top -->
+
+			<section class="contents cont_wide">
+
+				<!-- 컨텐츠 최상위 제목 -->
+				<h1 class="tit">찾아오시는 길</h1>
+				<div class="in_cont_wide">
+					<div class="map_text">
+						울산을 가로질러 동해로 흘러드는 태화강의 하류에 울산알루미늄은 자리잡고 있습니다. 울산의 서정과 낭만을 일깨워주는 태화강은 생명을<br>
+						유지시켜 주는 울산의 젖줄입니다. 태화강의 과거와 현재를 함께 해온 울산알루미늄은 미래를 향해 끊임없이 뻗어 나갈 것입니다.
+					</div>
+				</div>
+				<div class="over_wide address_info_bg">
+					<div class="in_cont_wide">
+						<ul class="address_info">
+							<li><span class="ic_adrs"></span><strong>주소</strong>44714 울산광역시 남구 부두로393(여천동)</li>
+							<li><span class="ic_number"></span><strong>대표전화</strong>052-279-1070</li>
+						</ul>
+					</div>
+				</div>
+				<div class="in_cont_wide">
+					<dl class="way_to_go">
+						<dt>자동차 이용시</dt>
+						<dd>울산IC<span></span>남부순환도로<span></span>문수로<span></span>삼산로(30분,10km)</dd>
+						<dt>KTX 이용시</dt>
+						<dd>
+							<strong>자동차로 이동(약 40분 소요)</strong>
+							울산(KTX)<span></span>울밀로<span></span>남산로<span></span>강남로<span></span>돋질로<span></span>산업로
+							<strong>리무진 버스로 이동(약 50분 소요)</strong>
+							울산(KTX)<span></span>5001번 리무진 탑승<span></span>태화강역 하차<span></span>택시로 이동
+						</dd>
+						<dt>비행기 이용시</dt>
+						<dd>울산공항<span></span>453번 버스 탑승<span></span>태화강역 정류장 하차<span></span>택시로 이동(30분,9km)</dd>
+					</dl>
+				</div>
+				<div class="over_wide">
+
+					<div id="naverMap" style="width:100%;height:400px;"></div>
+					<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=xa6x020cw4"></script>
+					<script>
+					new naver.maps.Map('naverMap', { // naverMap 값은 div 의 id 값
+						center : new naver.maps.LatLng(35.5437961,129.2804891), // 지도 중앙 위치 : 위도, 경도 설정
+						zoom : 10, // 줌 설정 : 1~14, 수치가 클수록 지도 확대(줌인), 이 옵션 생략시 기본값 9
+						zoomControl : true, // 줌 컨트롤 표시 (기본값 표시안함)
+						zoomControlOptions : { // 줌 컨트롤 오른쪽 위로 위치 설정
+						position : naver.maps.Position.TOP_RIGHT // 오른쪽 위로 설정값
+						},
+						mapTypeControl : true, // 일반ㆍ위성 지도보기 컨트롤 표시 (기본값 표시안함)
+					});
+					</script>
+				</div>
+				<div class="in_cont_wide bx_map_btn">
+					<ul><li><a href="#;" class="btn_df w180">Google 지도보기</a></li><li><a href="#;" class="btn_df w180">Daum 지도보기</a></li></ul>
+				</div>
+			</section>
+
+			<!-- end of contents -->
+
+		</div>
+		<!-- end of container -->
+
+		@@include('./include/footer.html')
+	</div>
+	<!-- end of wrap -->
+
+</body>
+</html>

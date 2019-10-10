@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./include/sub_head_meta.html')
+
+<!-- 서브페이지에는 sub 클래스가 추가됩니다. -->
+<!-- 팝업이 오픈 상태일 경우 _noScroll 클래스가 body에 추가됩니다. -->
+<body class="sub only_pc _noScroll">
+
+	<div class="skip-content">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- end of skip-content -->
+
+	<div class="wrap">
+		@@include('./include/header.html')
+
+		<div id="container" class="container">
+
+			<div class="wrap_path_menu">
+				<div class="inner">
+					<a href="/" class="btn_link_home"><i class="icon_go_home">home</i></a>
+					<ol class="lst_menu">
+
+						<!-- 메뉴 활성화 클래스 active -->
+						<li class="">
+							<dl>
+								<dt><button type="button">인재채용</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">회사소개</a></li>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li><a href="#;">생산제품</a></li>
+										<li><a href="#;">지속가능성</a></li>
+										<li class="current_page"><a href="#;">인재채용</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">회사 생활</button></dt>
+								<dd>
+									<ul>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li><a href="#;">회사 생활</a></li>
+										<li><a href="#;">입사지원 가이드</a></li>
+										<li class="current_page"><a href="#;">채용 정보</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">채용 공고</button></dt>
+								<dd>
+									<ul>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li class="current_page"><a href="#;">채용 공고</a></li>
+										<li><a href="#;">나의 지원 현황</a></li>
+										<li><a href="#;">채용 결과 확인</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- end of wrap_path_menu -->
+
+			<!-- 배경이미지 : 해당 페이지의 경우에는 apply 클래스가 추가됩니다. -->
+			<div class="wrap_sub_top apply">
+				<div class="visual table">
+					<div class="row tit_area">
+						<div class="cell">
+							<h3 class="tit_kr">채용정보</h3>
+							<p class="tit_eng">Applying Ulsan Aluminum</p>
+						</div>
+					</div>
+					<!-- end of tit_area -->
+
+					<!-- 메뉴가 없을 경우 menu_area 삭제 -->
+					<div class="row menu_area">
+						<div class="cell">
+							<dl>
+								<dt class="btn_mob_tit">
+									<!--
+										현재 페이지 제목이 들어옵니다.
+										해당 버튼은 모바일에서만 노출되며
+										클릭시 하위 메뉴가 열리는 형식입니다.
+									 -->
+									<button type="button" class="btn_m_3depth">나의 지원 현황</button>
+								</dt>
+								<dd>
+									<!-- 메뉴 갯수에 따라 클래스가 다릅니다.
+									[ len + 메뉴 갯수 ]
+									 -->
+									<ul class="lst_menu len_2">
+
+										<!-- 현재 페이지 메뉴 일 경우 current_page 클래스가 추가됩니다. -->
+										<li><a href="#;">채용공고</a></li>
+										<li><a href="#;" class="current_page">나의 지원 현황</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- end of menu_area -->
+
+				</div>
+				<!-- end of visual -->
+
+			</div>
+			<!-- end of wrap_sub_top -->
+
+			<section class="contents">
+
+				<!-- 컨텐츠 최상위 제목 -->
+				<h1 class="tit">나의 지원 현황</h1>
+
+				<div class="ct_board board_list board_apply board_apply_mylist">
+
+					<div class="bx_bd_top">
+						<div class="bd_num">총 <span>4</span>건</div>
+					</div>
+					<!-- end of bx_bd_top -->
+
+					<div class="bx_bd_tb">
+
+						<div class="table tb_default_lst_v2">
+							<div class="row top_notice">
+								<div class="cell part">일반직 경력</div>
+								<div class="cell tit">
+									<a href="#;">[일반직 신입] 울산알루미늄 재무 담당자 모집 울산알루미늄 재무 담당자 모집</a>
+								</div>
+								<div class="cell apl_period">
+									<span class="label appl_end">마감</span>
+									<em class="date">모집완료시까지</em>
+								</div>
+								<div class="cell btn_apl">
+									<a href="" class="btn_df btn_bd_gr">제출완료</a>
+									<a href="" class="btn_df btn_bl">결과보기</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell part">경력구분</div>
+								<div class="cell tit">
+									<a href="#;">[일반직 신입] 울산알루미늄 재무 담당자 모집 울산알루미늄 재무 담당자 모집</a>
+								</div>
+								<div class="cell apl_period">
+									<span class="label appl_end">마감</span>
+									<em class="date">모집완료시까지</em>
+								</div>
+								<div class="cell btn_apl">
+									<a href="" class="btn_df btn_bd_gr">작성중</a>
+									<a href="" class="btn_df btn_bl">결과보기</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell part">일반직 경력</div>
+								<div class="cell tit">
+									<a href="#;">[일반직 신입] 울산알루미늄 재무 담당자 모집 울산알루미늄 재무 담당자 모집</a>
+								</div>
+								<div class="cell apl_period">
+									<span class="label fix_date">D-30</span>
+									<em class="date">2018.05.26~2018.06.26</em>
+								</div>
+								<div class="cell btn_apl">
+									<a href="" class="btn_df btn_bd_gr">제출완료</a>
+									<a href="" class="btn_df btn_gr">마감</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell part">일반직 경력</div>
+								<div class="cell tit">
+									<a href="#;">[일반직 신입] 울산알루미늄 재무 담당자 모집 울산알루미늄 재무 담당자 모집</a>
+								</div>
+								<div class="cell apl_period">
+									<span class="label appl_end">마감</span>
+									<em class="date">모집완료시까지</em>
+								</div>
+								<div class="cell btn_apl">
+									<a href="" class="btn_df btn_bd_gr">제출완료</a>
+									<a href="" class="btn_df btn_gr">마감</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell part">일반직 경력</div>
+								<div class="cell tit">
+									<a href="#;">[일반직 신입] 울산알루미늄 재무 담당자 모집 울산알루미늄 재무 담당자 모집</a>
+								</div>
+								<div class="cell apl_period">
+									<span class="label fix_date">D-30</span>
+									<em class="date">2018.05.26~2018.06.26</em>
+								</div>
+								<div class="cell btn_apl">
+									<a href="" class="btn_df btn_bd_gr">제출완료</a>
+									<a href="" class="btn_df btn_gr">마감</a>
+								</div>
+							</div>
+						</div>
+						<!-- end of tb_default_lst_v2 -->
+
+						<p class="tb_bot_txt">
+							채용관련  문의사항은 <span class="t_strg">052-279-0613</span> 또는 <span class="t_strg">hyoju.cho@ulsanaluminum.com</span> 으로 문의 주시기 바랍니다.
+						</p>
+						<!-- end of tb_bot_txt -->
+
+					</div>
+					<!-- end of bx_bd_tb -->
+
+					<div class="bx_bd_bot">
+						<div class="paging">
+							<a href="#;" class="prev_page"><i class="icon_prev">이전 페이지</i></a>
+							<strong class="current_page">1</strong>
+							<a href="#;" class="next_page"><i class="icon_next">다음 페이지</i></a>
+						</div>
+					</div>
+					<!-- end of bx_bd_bot -->
+
+				</div>
+				<!-- end of ct_board -->
+
+			</section>
+			<!-- end of contents -->
+
+		</div>
+		<!-- end of container -->
+
+		@@include('./include/footer.html')
+	</div>
+	<!-- end of wrap -->
+
+	<!-- 결과보기 팝업에는 pop_apply_result 클래스가 추가됩니다. -->
+	<!-- 팝업 활성화 클래스 : open_popup -->
+	<div class="popup_wrap pop_apply_result open_popup">
+		<div class="popup_container">
+			<div class="p_header">
+				<strong class="title">심사 결과</strong>
+				<button type="button" class="btn_close">팝업 닫기</button>
+			</div>
+			<div class="p_contents">
+
+				<div class="ct_apply_result_pass">
+					<p class="tit">
+						축하합니다. <br />서류 전형에 <strong>합격</strong>하셨습니다.
+					</p>
+					<p class="desc">
+						<strong class="name">홍길동</strong> 님 축하합니다. 울산알루미늄 채용 서류 전형에 합격 하셨습니다. <br />이후 채용 절차에 대한 자세한 안내는 전화 및 이메일로 안내될 예정입니다.
+					</p>
+					<p class="t_help">
+						기타 문의사항은 052-279-0613 또는 hyoju.cho@ulsanaluminum.com 으로 문의 주시기 바랍니다.
+					</p>
+				</div>
+				<!-- end of ct_apply_result_pass -->
+
+			</div>
+			<div class="p_footer"></div>
+		</div>
+		<!-- end of popup_container -->
+
+		<div class="popup_dimd"></div>
+	</div>
+	<!-- end of popup_wrap -->
+
+
+
+</body>
+</html>

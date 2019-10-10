@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.wrap{
+	padding-top:$pc-header-height;
+	@at-root body.main &{
+		padding-top:0;
+	}
+}
+
+// 레이아웃
+body{
+	&.sub{
+		.contents{
+			width:100%;
+			max-width: $sub-content-width;
+			height:100%;
+			margin:0 auto;
+			padding:0 0 150px;
+		}
+	}
+	// 반응형 제외 페이지
+	&.only_pc{
+	}
+}
+
+// 태블릿
+@include tab {
+
+	.wrap{
+		padding-top:$mobile-header-height;
+	}
+
+	// 레이아웃
+	body{
+		&.sub{
+			.contents{
+				padding:0 15px 30px;
+			}
+		}
+	}
+
+}

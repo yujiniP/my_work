@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./include/sub_head_meta.html')
+
+<!-- 서브페이지에는 sub 클래스가 추가됩니다. -->
+<body class="sub">
+
+	<div class="skip-content">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- end of skip-content -->
+
+	<div class="wrap">
+		@@include('./include/header.html')
+
+		<div id="container" class="container">
+
+			<div class="wrap_path_menu">
+				<div class="inner">
+					<a href="/" class="btn_link_home"><i class="icon_go_home">home</i></a>
+					<ol class="lst_menu">
+
+						<!-- 메뉴 활성화 클래스 active -->
+						<li class="">
+							<dl>
+								<dt><button type="button">회사소개</button></dt>
+								<dd>
+									<ul>
+										<li class="current_page"><a href="#;">회사소개</a></li>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li><a href="#;">생산제품</a></li>
+										<li><a href="#;">지속가능성</a></li>
+										<li><a href="#;">인재채용</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">회사소개</button></dt>
+								<dd>
+									<ul>
+										<li class="current_page"><a href="#;">회사소개</a></li>
+										<li><a href="#;">주주 정보</a></li>
+										<li><a href="#;">찾아오시는 길</a></li>
+										<li><a href="#;">공지</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">기업문화</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">회사 개요</a></li>
+										<li><a href="#;">CEO 인사말</a></li>
+										<li><a href="#;">연혁</a></li>
+										<li class="current_page"><a href="#;">기업문화</a></li>
+										<li><a href="#;">CI</a></li>
+										<li><a href="#;">조직도</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- end of wrap_path_menu -->
+
+			<!-- 배경이미지 : 해당 페이지의 경우에는 manufact 클래스가 추가됩니다. -->
+			<div class="wrap_sub_top company">
+				<div class="visual table">
+					<div class="row tit_area">
+						<div class="cell">
+							<h3 class="tit_kr">회사소개</h3>
+							<p class="tit_eng">About US</p>
+						</div>
+					</div>
+					<!-- end of tit_area -->
+
+					<!-- 메뉴가 없을 경우 menu_area 삭제 -->
+					<div class="row menu_area">
+						<div class="cell">
+							<dl>
+								<dt class="btn_mob_tit">
+									<!--
+										현재 페이지 제목이 들어옵니다.
+										해당 버튼은 모바일에서만 노출되며
+										클릭시 하위 메뉴가 열리는 형식입니다.
+									 -->
+									<button type="button" class="btn_m_3depth">기업문화</button>
+								</dt>
+								<dd>
+									<!-- 메뉴 갯수에 따라 클래스가 다릅니다.
+									[ len + 메뉴 갯수 ]
+									 -->
+									<ul class="lst_menu len_6">
+
+										<!-- 현재 페이지 메뉴 일 경우 current_page 클래스가 추가됩니다. -->
+										<li><a href="#;">회사 개요</a></li>
+										<li><a href="#;">CEO 인사말</a></li>
+										<li><a href="#;">연혁</a></li>
+										<li><a href="#;" class="current_page">기업문화</a></li>
+										<li><a href="#;">CI</a></li>
+										<li><a href="#;">조직도</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- end of menu_area -->
+
+				</div>
+				<!-- end of visual -->
+
+			</div>
+			<!-- end of wrap_sub_top -->
+
+			<section class="contents cont_wide">
+				<h1 class="tit">울산알루미늄의 5가지 포커스</h1>
+				<div class="over_wide">
+					<div class="cult_bg">
+            <span class="img_bg_focus"><img src="images/bg_focus_m.jpg" class="m_img"></span>
+						<div class="in_cont_wide">
+							<ul class="bx_fcs_text" id="animate">
+								<li class="txt_info01 bx01">
+									<strong class="c02">안전 Safety</strong>
+									안전은 기업운영의 최우선 과제입니다. 우리가  하는 모든 것은 안전에 대한 우리의 약속으로 부터 시작합니다.
+								</li>
+								<li class="txt_info02 bx02">
+									<strong class="c05">고객 중심 Customer Centricity</strong>
+									고객 만족도 향상에 대한 끊임없는 노력 <br />– 우리의 고객은 우리의 주주들이지만, 주주들의 만족을 위하여, 우리는 반드시 최종 고객을 만족시켜야 합니다.
+								</li>
+								<li class="txt_info03 bx03">
+									<strong class="c04">품질 우수 Quality</strong>
+									우리는 업계에서 최고의 품질을 반드시 유지<br>
+									해야 하며, 품질은 납기 준수 및 비용 효율성과<br>
+									함께 고객 만족을 위한 핵심요소 입니다.
+								</li>
+								<li class="txt_info04 bx04">
+									<strong class="c03">운영 우수성 Operational Excellence</strong>
+									공장을 효율적으로 운영하고, 모든 설비를<br>
+									최적의 상태로 유지하며, 재고관리와 비용 절감<br>
+									에 만전을 기해야 합니다
+								</li>
+								<li class="txt_info05 bx05">
+									<strong class="c01">비용 효율성 Cost Effectiveness</strong>
+									가격경쟁력 제고를 위한 비용효율성 확보는 우리 제품의 경쟁력 확보를 위한 핵심 요소입니다. 최저의 가격으로 최고수준의 생산성, 품질, 신뢰성을 확보하는 것이 우리가 추구하는 주요한 목표중 하나입니다.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="in_cont_wide">
+					<div class="bx_temp_01 fcs">
+						<h2>울산알루미늄의 <br>기업 문화</h2>
+						<div class="in_box">
+							<span class="fcs_txt_tit">울산알루미늄의 모든 임직원은 바람직한 조직 문화를 바탕으로 조직의 경쟁력을 강화하기 위해 다섯 가지 기업문화를 실천하고 있습니다.
+							기업문화 다섯 가지는 울산알루미늄의 Focused 5 목표 달성을 위한 올바른 믿음과 행동을 이끌어 가는 바탕이 됩니다.
+							</span>
+
+							<!-- <dl class="bx_company_info">
+								<dt>올바르게 일합니다.</dt>
+								<dd>나는 우리의 고객에게 품질과 비용효과가 우수한솔루션을 안전하게 제공합니다.</dd>
+								<dt>자유롭게 소통합니다.</dt>
+								<dd>나는 경청하고 솔직하게발언하며 정중하게 반론합니다.</dd>
+								<dt>내일의 주인이 됩니다.</dt>
+								<dd>나는 책임감을 가지고 5가지 포커스를 실천합니다.</dd>
+								<dt>집중하여 정확히 실행합니다.</dt>
+								<dd>나는 완벽한 실행을 위해 원칙을 준수하고, 업무를 완수합니다.</dd>
+								<dt>함께윈-윈합니다. </dt>
+								<dd>나는 울산알루미늄의성공을 위해 지속적으로 협력합니다.</dd>
+							</dl> -->
+						</div>
+					</div><!-- bx_temp_01 -->
+					<div class="wrap_lst_company">
+						<ul class="lst_company_info">
+							<li>
+								<div class="in">
+									<div class="table">
+										<div class="row">
+											<dl class="cell">
+												<dt>올바르게 <br />일합니다</dt>
+												<dd>나는 우리의 고객에게 품질과 비용효과가 우수한솔루션을 안전하게 제공합니다.</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="in">
+									<div class="table">
+										<div class="row">
+											<dl class="cell">
+												<dt>자유롭게 <br />소통합니다.</dt>
+												<dd>나는 경청하고 솔직하게발언하며 정중하게 반론합니다.</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="in">
+									<div class="table">
+										<div class="row">
+											<dl class="cell">
+												<dt>내일의 <br />주인이 됩니다.</dt>
+												<dd>나는 책임감을 가지고 5가지 포커스를 실천합니다.</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="in">
+									<div class="table">
+										<div class="row">
+											<dl class="cell">
+												<dt>집중하여 <br />정확히 실행합니다.</dt>
+												<dd>나는 완벽한 실행을 위해 원칙을 준수하고, 업무를 완수합니다.</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="in">
+									<div class="table">
+										<div class="row">
+											<dl class="cell">
+												<dt>함께<br />윈-윈합니다. </dt>
+												<dd>나는 울산알루미늄의성공을 위해 지속적으로 협력합니다.</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</section>
+			<!-- end of contents -->
+
+		</div>
+		<!-- end of container -->
+
+		@@include('./include/footer.html')
+	</div>
+	<!-- end of wrap -->
+
+</body>
+</html>

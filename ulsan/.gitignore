@@ -1,0 +1,10 @@
+node_modules
+app
+*~
+.DS_store
+.gulp-cache
+html_build
+js_min
+Thumbs.db
+
+html/scss/sprite/

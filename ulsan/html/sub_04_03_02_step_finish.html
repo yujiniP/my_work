@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./include/sub_head_meta.html')
+
+<!-- 서브페이지에는 sub 클래스가 추가됩니다. -->
+<!-- 해당 페이지는 피씨에서만 사용되기 때문에 only_pc 클래스 추가됩니다. -->
+<body class="sub only_pc">
+
+	<div class="skip-content">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- end of skip-content -->
+
+	<div class="wrap">
+		@@include('./include/header.html')
+
+		<!-- 이 페이지에는 recruit 클래스가 추가됩니다. -->
+		<div id="container" class="container recruit">
+
+			<div class="wrap_path_menu">
+				<div class="inner">
+					<a href="/" class="btn_link_home"><i class="icon_go_home">home</i></a>
+					<ol class="lst_menu">
+
+						<!-- 메뉴 활성화 클래스 active -->
+						<li class="">
+							<dl>
+								<dt><button type="button">인재채용</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">회사소개</a></li>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li><a href="#;">생산제품</a></li>
+										<li><a href="#;">지속가능성</a></li>
+										<li class="current_page"><a href="#;">인재채용</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">회사 생활</button></dt>
+								<dd>
+									<ul>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li><a href="#;">회사 생활</a></li>
+										<li><a href="#;">입사지원 가이드</a></li>
+										<li class="current_page"><a href="#;">채용 정보</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">채용 공고</button></dt>
+								<dd>
+									<ul>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li class="current_page"><a href="#;">채용 공고</a></li>
+										<li><a href="#;">나의 지원 현황</a></li>
+										<li><a href="#;">채용 결과 확인</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- end of wrap_path_menu -->
+
+			<!-- 배경이미지 : 해당 페이지의 경우에는 apply 클래스가 추가됩니다. -->
+			<div class="wrap_sub_top apply">
+				<div class="visual table">
+					<div class="row tit_area">
+						<div class="cell">
+							<h3 class="tit_kr">채용정보</h3>
+							<p class="tit_eng">Applying Ulsan Aluminum</p>
+						</div>
+					</div>
+					<!-- end of tit_area -->
+
+					<!-- 메뉴가 없을 경우 menu_area 삭제 -->
+					<div class="row menu_area">
+						<div class="cell">
+							<dl>
+								<dt class="btn_mob_tit">
+									<!--
+										현재 페이지 제목이 들어옵니다.
+										해당 버튼은 모바일에서만 노출되며
+										클릭시 하위 메뉴가 열리는 형식입니다.
+									 -->
+									<button type="button" class="btn_m_3depth">채용공고</button>
+								</dt>
+								<dd>
+									<!-- 메뉴 갯수에 따라 클래스가 다릅니다.
+									[ len + 메뉴 갯수 ]
+									 -->
+									<ul class="lst_menu len_2">
+
+										<!-- 현재 페이지 메뉴 일 경우 current_page 클래스가 추가됩니다. -->
+										<li><a href="#;" class="">채용공고</a></li>
+										<li><a href="#;">나의 지원 현황</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- end of menu_area -->
+
+				</div>
+				<!-- end of visual -->
+
+			</div>
+			<!-- end of wrap_sub_top -->
+
+			<section class="contents">
+
+				<!-- 컨텐츠 최상위 제목 -->
+				<h1 class="tit">나의 지원서</h1>
+
+				<div class="ct_apply_finish">
+					<div class="bx_txt">
+						<dl>
+							<dt class="tit">지원서 제출이 <strong>완료</strong> 되었습니다.</dt>
+							<dd class="desc">
+								지원해 주셔서 감사합니다.<br />합격자 발표일 이후 홈페이지 채용 결과 확인 메뉴에서 결과 확인이 가능합니다. <br />합격자 발표일은 별도 개별 공지할 예정입니다.
+							</dd>
+						</dl>
+					</div>
+					<!-- end of bx_txt -->
+
+					<div class="bx_btns">
+						<a href="#;" class="btn_df w180 btn_bd_dark">Main</a>
+						<a href="#;" class="btn_df w180">나의 지원현황</a>
+					</div>
+					<!-- end of bx_btns -->
+
+				</div>
+				<!-- end of ct_apply_finish -->
+
+			</section>
+			<!-- end of contents -->
+
+		</div>
+		<!-- end of container -->
+
+		@@include('./include/footer.html')
+	</div>
+	<!-- end of wrap -->
+
+</body>
+</html>

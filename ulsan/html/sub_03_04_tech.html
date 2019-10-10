@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./include/sub_head_meta.html')
+
+<!-- 서브페이지에는 sub 클래스가 추가됩니다. -->
+<body class="sub">
+
+	<div class="skip-content">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- end of skip-content -->
+
+	<div class="wrap">
+		@@include('./include/header.html')
+
+		<div id="container" class="container">
+
+			<div class="wrap_path_menu">
+				<div class="inner">
+					<a href="/" class="btn_link_home"><i class="icon_go_home">home</i></a>
+					<ol class="lst_menu">
+
+						<!-- 메뉴 활성화 클래스 active -->
+						<li class="">
+							<dl>
+								<dt><button type="button">생산제품</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">회사소개</a></li>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li class="current_page"><a href="#;">생산제품</a></li>
+										<li><a href="#;">지속가능성</a></li>
+										<li><a href="#;">인재채용</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">생산공정</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">알루미늄 압연</a></li>
+										<li class="current_page"><a href="#;">생산공정</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">주조</button></dt>
+								<dd>
+									<ul>
+										<li class="current_page"><a href="#;">주조</a></li>
+										<li><a href="#;">열연</a></li>
+										<li><a href="#;">냉연</a></li>
+										<li><a href="#;">제품</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- end of wrap_path_menu -->
+
+			<!-- 배경이미지 : 해당 페이지의 경우에는 tech 클래스가 추가됩니다. -->
+			<div class="wrap_sub_top tech">
+				<div class="visual table">
+					<div class="row tit_area">
+						<div class="cell">
+							<h3 class="tit_kr">기술·품질 경영</h3>
+							<p class="tit_eng">Technology & Quality Management</p>
+						</div>
+					</div>
+					<!-- end of tit_area -->
+
+					<!-- 메뉴가 없을 경우 menu_area 삭제 -->
+					<div class="row menu_area">
+						<div class="cell">
+							<dl>
+								<dt class="btn_mob_tit">
+									<!--
+										현재 페이지 제목이 들어옵니다.
+										해당 버튼은 모바일에서만 노출되며
+										클릭시 하위 메뉴가 열리는 형식입니다.
+									 -->
+									<button type="button" class="btn_m_3depth">지속가능 경영</button>
+								</dt>
+								<dd>
+									<!-- 메뉴 갯수에 따라 클래스가 다릅니다.
+									[ len + 메뉴 갯수 ]
+									 -->
+									<ul class="lst_menu len_5">
+
+										<!-- 현재 페이지 메뉴 일 경우 current_page 클래스가 추가됩니다. -->
+										<li><a href="#;">지속가능 경영</a></li>
+										<li><a href="#;">E∙H∙S</a></li>
+										<li><a href="#;">윤리경영</a></li>
+										<li><a href="#;" class="current_page">기술∙품질 경영</a></li>
+										<li><a href="#;">사회공헌</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- end of menu_area -->
+
+				</div>
+				<!-- end of visual -->
+
+			</div>
+			<!-- end of wrap_sub_top -->
+
+			<section class="contents cont_wide">
+
+				<!-- 컨텐츠 최상위 제목 -->
+				<h1 class="tit">기술·품질 경영</h1>
+
+				<div class="ct_tech">
+
+					<div class="cont_wide_inner_center">
+
+						<div class="bx_grid_type_desc table">
+							<div class="row">
+								<div class="cell cell_label">인증 획득</div>
+								<div class="cell cell_cont">
+									<p>울산알루미늄은 IATF 16949 자동차산업 품질경영시스템 인증 획득으로 급변하는 자동차 분야의 기술 트렌드에 발맞춰 고객사의 요구사항을 충족하고 제품 품질의 지속적 개선을 효과적으로 실현하는 국제적인 수준의 프로세스와 관리기준을 갖게 되었습니다.</p>
+									<ul class="lst_basic">
+										<li><strong class="date">1997.12</strong>ISO 9001 QMS by KSA</li>
+										<li><strong class="date">2002.12</strong>ISO 9001 QMS by BSI</li>
+										<li><strong class="date">2003.06</strong>Integrated EHSQ Certificate by BSI</li>
+										<li><strong class="date">2005.12</strong>TS 16949 Certificate for Universal Cast Process by BSI</li>
+										<li><strong class="date">2017.12</strong>IATF 16949 Certificate for Automotive Rolling process Keeping Certificates Continue</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- end of cont_wide_inner_center -->
+
+					<div class="over_bg wrap_ehs_doc tech_qual">
+						<div class="cont_wide_inner_center">
+
+							<div class="bx_grid_type_desc table">
+								<div class="row">
+									<div class="cell cell_label">
+										<img src="images/img_tech_qual_01.png" alt="">
+									</div>
+									<div class="cell cell_cont">
+										<ul class="lst_doc">
+											<li>
+												<p class="img_doc">
+													<img src="images/img_tech_qual_document_01.jpg" alt="">
+												</p>
+												품질경영시스템 ISO 9001:2015
+											</li>
+											<li>
+												<p class="img_doc">
+													<img src="images/img_tech_qual_document_02.jpg" alt="">
+												</p>
+												국제자동차산업표준기구 IATF 16949
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- end of over_bg -->
+
+				</div>
+				<!-- end of ct_tech -->
+
+			</section>
+			<!-- end of contents -->
+
+		</div>
+		<!-- end of container -->
+
+		@@include('./include/footer.html')
+	</div>
+	<!-- end of wrap -->
+
+</body>
+</html>

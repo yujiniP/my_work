@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./include/sub_head_meta.html')
+
+<!-- 서브페이지에는 sub 클래스가 추가됩니다. -->
+<body class="sub">
+
+	<div class="skip-content">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- end of skip-content -->
+
+	<div class="wrap">
+		@@include('./include/header.html')
+
+		<div id="container" class="container">
+
+			<div class="wrap_path_menu">
+				<div class="inner">
+					<a href="/" class="btn_link_home"><i class="icon_go_home">home</i></a>
+
+					<!-- 1depth 메뉴 클릭 시 해당 페이지로 링크이동 합니다. -->
+					<a href="#" class="btn_depth1">회사소개</a>
+					<ol class="lst_menu">
+
+						<!-- 메뉴 활성화 클래스 active -->
+						<li>
+							<dl>
+								<dt><button type="button">회사소개</button></dt>
+								<dd>
+									<ul>
+										<li class="current_page"><a href="#;">회사소개</a></li>
+										<li><a href="#;">주주 정보</a></li>
+										<li><a href="#;">찾아오시는 길</a></li>
+										<li><a href="#;">공지</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">회사 개요</button></dt>
+								<dd>
+									<ul>
+										<li class="current_page"><a href="#;">회사 개요</a></li>
+										<li><a href="#;">CEO 인사말</a></li>
+										<li><a href="#;">연혁</a></li>
+										<li><a href="#;">기업문화</a></li>
+										<li><a href="#;">CI</a></li>
+										<li><a href="#;">조직도</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- end of wrap_path_menu -->
+
+			<!-- 배경이미지 : 해당 페이지의 경우에는 manufact 클래스가 추가됩니다. -->
+			<div class="wrap_sub_top company">
+				<div class="visual table">
+					<div class="row tit_area">
+						<div class="cell">
+							<h3 class="tit_kr">회사소개</h3>
+							<p class="tit_eng">About US</p>
+						</div>
+					</div>
+					<!-- end of tit_area -->
+
+					<!-- 메뉴가 없을 경우 menu_area 삭제 -->
+					<div class="row menu_area">
+						<div class="cell">
+							<dl>
+								<dt class="btn_mob_tit">
+									<!--
+										현재 페이지 제목이 들어옵니다.
+										해당 버튼은 모바일에서만 노출되며
+										클릭시 하위 메뉴가 열리는 형식입니다.
+									 -->
+									<button type="button" class="btn_m_3depth">회사 개요</button>
+								</dt>
+								<dd>
+									<!-- 메뉴 갯수에 따라 클래스가 다릅니다.
+									[ len + 메뉴 갯수 ]
+									 -->
+									<ul class="lst_menu len_6">
+
+										<!-- 현재 페이지 메뉴 일 경우 current_page 클래스가 추가됩니다. -->
+										<li><a href="#;" class="current_page">회사 개요</a></li>
+										<li><a href="#;">CEO 인사말</a></li>
+										<li><a href="#;">연혁</a></li>
+										<li><a href="#;">기업문화</a></li>
+										<li><a href="#;">CI</a></li>
+										<li><a href="#;">조직도</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- end of menu_area -->
+
+				</div>
+				<!-- end of visual -->
+
+			</div>
+			<!-- end of wrap_sub_top -->
+
+			<section class="contents cont_wide">
+
+				<!-- 컨텐츠 최상위 제목 -->
+				<h1 class="tit"><!-- 회사개요 --></h1>
+				<div class="in_cont_wide img_info">
+					<div class="summary_text">
+						<strong>울산알루미늄은</strong>
+						2017년 9월 세계 최대 알루미늄 압연 기업인 노벨리스와 <br>
+						일본 3대 철강회사이자 알루미늄 및 구리 생산 기업인 고베제강의 합작 법인으로 출범했습니다.<br>
+						울산알루미늄은 고부가가치의 제품과 양질의 서비스를 전 세계 고객에게 공급하는 것에<br>
+						최고의 가치를 두고, 특히 자동차 경량화를 위한 소재 산업에서 환경 친화적이면서도<br>
+						효율적인 솔루션을 제공하기 위해 노력하고 있습니다.
+					</div>
+				</div>
+				<div class="over_wide img_bg_info">
+					<div class="in_cont_wide">
+						<ul class="comp_desc" id="animate">
+							<li class="bx01">
+								<div class="bx_one">
+									<strong>직원 수</strong>
+									<dl><dt>600<em>명</em></dt></dl>
+									<span class="ic_img01"></span>
+								</div>
+							</li>
+							<li class="bx02">
+								<div class="bx_one">
+									<strong>보유 설비</strong>
+									<dl>
+										<dd>주조/재활용<br>열간 압연</dd>
+										<dd>냉간 압연<br>제품 설비</dd>
+									</dl>
+									<span class="ic_img02"></span>
+								</div>
+							</li>
+							<li class="bx03">
+								<div class="bx_one">
+									<strong>생산 능력</strong>
+									<dl><dt>400<em>KT</em></dt></dl>
+									<span class="ic_img03"></span>
+								</div>
+							</li>
+							<li class="w_50 bx04">
+								<div class="bx_one st_left">
+									<strong>공장 면적</strong>
+									<dl><dt>36,850<em>m<sup>2</sup></em></dt></dl>
+									<span class="ic_img04"></span>
+								</div>
+							</li>
+							<li class="w_50 bx05">
+								<div class="bx_one st_right">
+									<strong>외부 인증</strong>
+									<dl>
+										<dd class="add_opt">ISO 9001<br>ISO 14001</dd>
+										<dd class="add_opt">OHSAS 18001<br>ISO TS 16949</dd>
+									</dl>
+									<span class="ic_img05"></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- end of contents -->
+
+		</div>
+		<!-- end of container -->
+
+		@@include('./include/footer.html')
+	</div>
+	<!-- end of wrap -->
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./include/sub_head_meta.html')
+
+<!-- 서브페이지에는 sub 클래스가 추가됩니다. -->
+<body class="sub">
+
+	<div class="skip-content">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- end of skip-content -->
+
+	<div class="wrap">
+		@@include('./include/header.html')
+
+		<div id="container" class="container">
+
+			<div class="wrap_path_menu">
+				<div class="inner">
+					<a href="/" class="btn_link_home"><i class="icon_go_home">home</i></a>
+					<ol class="lst_menu">
+
+						<!-- 메뉴 활성화 클래스 active -->
+						<li class="">
+							<dl>
+								<dt><button type="button">회사소개</button></dt>
+								<dd>
+									<ul>
+										<li class="current_page"><a href="#;">회사소개</a></li>
+
+										<!-- 현재 페이지의 메뉴 일 경우 current_page 클래스 추가가 필요합니다. -->
+										<li><a href="#;">생산제품</a></li>
+										<li><a href="#;">지속가능성</a></li>
+										<li><a href="#;">인재채용</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><button type="button">주주 정보</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">회사소개</a></li>
+										<li class="current_page"><a href="#;">주주 정보</a></li>
+										<li><a href="#;">찾아오시는 길</a></li>
+										<li><a href="#;">공지</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<!-- <li>
+							<dl>
+								<dt><button type="button">CI</button></dt>
+								<dd>
+									<ul>
+										<li><a href="#;">회사 개요</a></li>
+										<li><a href="#;">CEO 인사말</a></li>
+										<li><a href="#;">연혁</a></li>
+										<li><a href="#;">기업문화</a></li>
+										<li class="current_page"><a href="#;">CI</a></li>
+										<li><a href="#;">조직도</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li> -->
+					</ol>
+				</div>
+			</div>
+			<!-- end of wrap_path_menu -->
+
+			<!-- 배경이미지 : 해당 페이지의 경우에는 manufact 클래스가 추가됩니다. -->
+			<div class="wrap_sub_top company">
+				<div class="visual table">
+					<div class="row tit_area">
+						<div class="cell">
+							<h3 class="tit_kr">회사소개</h3>
+							<p class="tit_eng">About US</p>
+						</div>
+					</div>
+					<!-- end of tit_area -->
+
+				</div>
+				<!-- end of visual -->
+
+			</div>
+			<!-- end of wrap_sub_top -->
+
+			<section class="contents">
+
+				<!-- 컨텐츠 최상위 제목 -->
+				<h1 class="tit">주주 정보</h1>
+				<div class="bx_temp_01">
+					<h2>노벨리스아시아<span class="s_tit">Novelis Asia</span></h2>
+					<div class="in_box">
+						<dl class="bx_company_info">
+							<dt>회사명</dt>
+							<dd>노벨리스 아시아 (Novelis Asia.)</dd>
+							<dt>설립일</dt>
+							<dd>1999년 9월 1일</dd>
+							<dt>본사</dt>
+							<dd>경상북도 영주시 적서공단로 23</dd>
+							<dt>매출액</dt>
+							<dd>2조 1,020억 700만</dd>
+							<dt>종업원수</dt>
+							<dd>전체 통합 900명 / 모기업 11,000명</dd>
+							<dt>홈페이지</dt>
+							<dd><a href="http://novelis.com/" target="_blank">http://novelis.com/</a></dd>
+						</dl>
+						<div class="bx_img_comp"><img src="images/img_stockholder_01.jpg" alt="노벨리스아시아 회사 사진" class="img_m"><span class="notice_date">기준 : 2017.12.</span></div>
+					</div>
+				</div><!-- bx_temp_01 -->
+				<div class="bx_temp_01">
+					<h2>고베제강<span class="s_tit">Kobe Steel, Ltd. (神戸製鋼所)</span></h2>
+					<div class="in_box">
+						<dl class="bx_company_info">
+							<dt>회사명</dt>
+							<dd>고베제강 (Kobe Steel, Ltd. （神戸製鋼所）)</dd>
+							<dt>설립일</dt>
+							<dd>1905년 9월 1일</dd>
+							<dt>본사</dt>
+							<dd>고베, 일본 (Kobe, Japan)</dd>
+							<dt>매출액</dt>
+							<dd>1,888,158 (million Yen)</dd>
+							<dt>종업원수</dt>
+							<dd>전체 통합 37,436명</dd>
+							<dt>홈페이지</dt>
+							<dd><a href="http://www.kobelco.co.jp/" target="_blank">http://www.kobelco.co.jp/</a></dd>
+						</dl>
+						<div class="bx_img_comp"><img src="images/img_stockholder_02.jpg" alt="고베제강 회사 사진" class="img_m"><span class="notice_date">기준 : 2018.03.</span></div>
+					</div>
+				</div><!-- bx_temp_01 -->
+
+			</section>
+			<!-- end of contents -->
+
+		</div>
+		<!-- end of container -->
+
+		@@include('./include/footer.html')
+	</div>
+	<!-- end of wrap -->
+
+</body>
+</html>

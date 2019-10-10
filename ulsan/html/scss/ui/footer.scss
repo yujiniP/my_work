@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@include retina-sprites($retina-groups);
+
+.footer{
+	color:#fff;
+	a{
+		color:#fff;
+	}
+	.top{
+		position: relative;
+		background-color: #333;
+		.inner{
+			padding-top:40px;
+			padding-bottom: 70px;
+			@include after() ;
+		}
+		.info{
+			float:left;
+			.logo{
+				@include sprite( $logo-logo_foot ) ;
+				@include texthide;
+			}
+			.addr{
+				margin-top: 90px;
+				dl{
+					margin-bottom: 10px;
+					line-height: 1;
+				}
+				dt, dd{
+					display: inline-block;
+					font-size:16px;
+				}
+				dt{
+					width:75px;
+					font-weight: bold;
+				}
+			}
+		}
+		.sitemap{
+			float:right;
+			padding-right: 10px;
+			dl{
+				float:left;
+				width:130px;
+			}
+			dt{
+				margin-bottom: 15px;
+				font-size:16px;
+				font-weight: bold;
+			}
+			dd{
+				ul{
+					li{
+						line-height: 30px;
+						a{
+							font-size:16px;
+						}
+					}
+				}
+			}
+		}
+		.btn_page_top{
+			display: block;
+			position: absolute;
+			right:0;
+			bottom:40px;
+			@include sprite( $icons-ic_page_top ) ;
+			@include texthide() ;
+			opacity: 0;
+			transition:all .5s;
+			&.show{
+				opacity: 1;
+			}
+		}
+	}
+	.bottom{
+		position: relative;
+		background-color: #3d3d3d;
+		line-height: 1;
+		.inner{
+			padding:30px 0;
+			@include after() ;
+		}
+		.util_menu{
+			float:right;
+			padding-right: 335px;
+			// padding-right: 260px;
+			li{
+				position:relative;
+				display: inline-block;
+				padding-left: 21px;
+				margin-left:20px;
+				&:before{
+					content:"";
+					display: block;
+					position:absolute;
+					left:0;
+					top:50%;
+					width:1px;
+					height:10px;
+					background-color: #787878;
+					@include prefix( transform, translateY( -50% ), webkit moz )
+				}
+				&:first-child{
+					&:before{
+						display: none;
+					}
+					margin-left: 0;
+					padding-left: 0;
+				}
+				&.policy{
+					&:before{
+						display: none;
+					}
+					a{
+						font-weight: bold;
+						color:#73c372;
+					}
+				}
+				&.eng{
+					display: none;
+				}
+			}
+		}
+		.copyright{
+			float:left;
+			font-size:14px;
+			letter-spacing: -.03em;
+		}
+	}
+	.inner{
+		position: relative;
+		width:100%;
+		max-width: $sub-content-width;
+		height:100%;
+		margin:0 auto;
+	}
+}
+
+// 태블릿
+@include tab {
+
+	.footer{
+		.top{
+			.inner{
+				padding:19px 15px 8px;
+			}
+			.info{
+				.logo{
+					@include retina-sprite( $logo2x-logo-foot-group ) ;
+				}
+				.addr{
+					margin-top: 21px;
+					dl{
+						margin-bottom: 4px;
+					}
+					dt, dd{
+						font-size:11px;
+					}
+					dt{
+						width:48px;
+					}
+				}
+			}
+			.sitemap{
+				display: none;
+			}
+			.btn_page_top{
+				right:15px;
+				bottom:15px;
+				@include retina-sprite( $icons2x-ic_page_top-group ) ;
+			}
+		}
+		.bottom{
+			.inner{
+				padding:15px;
+			}
+			.util_menu{
+				float:none;
+				padding-right: 0;
+				margin-bottom: 11px;
+				li{
+					padding-left: 15px;
+					margin-left: 13px;
+					a{
+						display: inline-block;
+						height: 15px;
+						line-height: 15px;
+						font-size:11px;
+						vertical-align: middle;
+					}
+					&:before{
+						height:8px;
+						background-color: #fff;
+					}
+					// &.map{
+					// 	display: none;
+					// }
+				}
+			}
+			.copyright{
+				float:none;
+				font-size:10px;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./include/main_head_meta.html')
+
+<!-- 메인페이지에는 main 클래스가 추가됩니다. -->
+<body class="sample">
+
+	<div class="skip-content">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- end of skip-content -->
+
+	<div class="wrap">
+		@@include('./include/header.html')
+
+		<div id="container" class="container">
+
+			<dl>
+				<dt>스프라이트 기본 이미지</dt>
+				<dd>
+					<span class="ico_01">아이콘</span>
+				</dd>
+				<dt>스프라이트 레티나 이미지</dt>
+				<dd>
+					<span class="ico_02">아이콘</span>
+				</dd>
+			</dl>
+
+		</div>
+		<!-- end of container -->
+
+		@@include('./include/footer.html')
+	</div>
+	<!-- end of wrap -->
+
+</body>
+</html>

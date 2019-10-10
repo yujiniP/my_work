@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+// @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&subset=korean');
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(../fonts/NotoSansKR-Thin.eot);
+    src: url(../fonts/NotoSansKR-Thin.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSansKR-Thin.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Thin.woff) format('woff'),
+    url(../fonts/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 200;
+    src: url(../fonts/NotoSansKR-Light.eot);
+    src: url(../fonts/NotoSansKR-Light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSansKR-Light.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Light.woff) format('woff'),
+    url(../fonts/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/NotoSansKR-DemiLight.eot);
+    src: url(../fonts/NotoSansKR-DemiLight.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSansKR-DemiLight.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-DemiLight.woff) format('woff'),
+    url(../fonts/NotoSansKR-DemiLight.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/NotoSansKR-Regular.eot);
+    src: url(../fonts/NotoSansKR-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSansKR-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Regular.woff) format('woff'),
+    url(../fonts/NotoSansKR-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/NotoSansKR-Medium.eot);
+    src: url(../fonts/NotoSansKR-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSansKR-Medium.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Medium.woff) format('woff'),
+    url(../fonts/NotoSansKR-Medium.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/NotoSansKR-Bold.eot);
+    src: url(../fonts/NotoSansKR-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSansKR-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Bold.woff) format('woff'),
+    url(../fonts/NotoSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('※'),
+        url(../fonts/NanumMyeongjo-Regular.woff2) format('woff2'),
+        url(../fonts/NanumMyeongjo-Regular.woff) format('woff'),
+        url(../fonts/NanumMyeongjo-Regular.ttf) format('truetype'),
+        url(../fonts/NanumMyeongjo-Regular.otf) format('opentype'),
+        url(../fonts/NanumMyeongjo-Regular.eot) format('embedded-opentype');
+}
+
+/* @font-face {
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('※'),
+        url(../fonts/NanumMyeongjoR.woff2) format('woff2'),
+        url(../fonts/NanumMyeongjoR.woff) format('woff'),
+        url(../fonts/NanumMyeongjoR.ttf) format('truetype'),
+        url(../fonts/NanumMyeongjoR.otf) format('opentype'),
+        url(../fonts/NanumMyeongjoR.eot) format('embedded-opentype');
+} */
+// reset
+html,body{height:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,form,fieldset,p,button{margin:0;padding:0;letter-spacing:-0.06em}
+body,input,select,textarea{color:#000;font-family:'NotoSansKR', '맑은 고딕','Malgun Gothic','돋움', Dotum, AppleSDGothic, Arial, sans-serif;font-size:15px;font-weight:normal}
+body{background:#fff;-webkit-text-size-adjust:none}
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+img,fieldset{border:0 none}
+ul,ol,li{list-style:none}
+address,caption,cite,code,dfn,em,i,var{font-style:normal;font-weight:normal}
+h1,h2,h3,h4,h5,th{font-weight:bold}
+hr,legend,caption{display:none}
+a{color:#000;text-decoration:none;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+a:link,a:hover,a:active{text-decoration:none}
+textarea{resize:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+input:focus{outline:none}
+table{border-spacing:0;border-collapse:collapse;table-layout:fixed}
+:focus{outline:0}
+textarea,input[type="text"],input[type="number"],input[type="password"],input[type="button"],input[type="submit"],input[type="reset"],input[type="email"],input[type="srch"],input[type="tel"]{-webkit-appearance:none;-webkit-border-radius:0;border:1px solid #969696}
+label,input[type="radio"],input[type="checkbox"]{vertical-align:middle}
+button{*overflow:visible;overflow:hidden;background-color:transparent;border:none;cursor:pointer;text-align:center}
+.blind,.skip{visibility:hidden;overflow:hidden;position:absolute;left:-1000em;width:0;height:0;font-size:0;line-height:0}
+// html5 tags reset
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+strong{
+   font-family:'NotoSansKR', '맑은 고딕','Malgun Gothic','돋움', Dotum, AppleSDGothic, Arial, sans-serif;
+   font-weight: bold;
+}

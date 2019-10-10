@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src = './js/main.js'></script>
+	<style type="text/css">
+	* {margin:0; padding:0}
+	html, body {color:#6773a9; font-size:12px; font-family:consolas, Dutum, "돋움", vardana}
+	div.wrap {border:5px solid #1865b3; padding:10px;}
+	.folder {color:#ff2e81; font-weight:bold}
+	table {margin:0; padding:0; table-layout:fixed; width: 100%; border:1px solid #eee;  border-collapse: collapse;}
+	tr {background:#ffffff}
+	th {padding:7px 0 5px 0; color:#6c8cd7; font-size:11px; text-align:center; background:#d4d4d4; border:1px solid #bbb;}
+	td {padding:5px 10px; color:#6c8cd7; font-size:11px;text-align:left; border:1px solid #bbb;}
+	table td.depthTitle {color:#777777; font-weight:bold; font-size:11px; text-align:left; padding-left:10px}
+	table td.etc {color:#393939; text-align:left; padding-left:5px;}
+	table td.link{text-align:left; padding-left:7px; color:blue;}
+	table td.link a {color:blue;}
+	table tr:hover{background-color:#d4d4d4;}
+	h2.title {padding:10px 0 15px 0; color:#000000; margin-bottom:8px; font-size:14px; text-align:center}
+	p.pageLink {margin:20px 0 10px 0; color:#0019a9;  font-size:11px}
+	a {color:#838383; text-decoration:none}
+	a:hover {color:#919191; text-decoration:underline}
+	dl.list dt {border-bottom: 1px dashed #ccc; font-size: 14px; line-height: 2em; padding: 5px; color: #000; overflow: hidden;}
+	dl.list dt button {padding: 2px 5px; margin-left: 20px; width: 180px; cursor: pointer; display: block; float: right; font-family:Dutum, "돋움", vardana}
+	dl.list dt span {font-weight: bold; color: #6c8cd7}
+	dl.list dd {padding:10px 0;}
+	.menu_line td {background:#efefef;}
+	.delete {text-decoration:line-through; color:red; font-weight:bold;}
+	.delete a{font-weight:normal; color:red !important;}
+	.ing td{background:#FFFBC8 ;}
+	.del td{background:#FF8606;}
+	.end td {background:#ffeaea;}
+	.wait td{background-color: #c8e9ec;}
+	</style>
+</head>
+<body>
+	 <div class="wrap">
+			<dl class="list">
+				 <dt>프로젝트명</dt>
+				 <dd>
+						<table width="1200" border="0" cellpadding="5" cellspacing="1" bgcolor="#dedcdc" class="tbl">
+							 <colgroup>
+									<col style="width:15%" />
+									<col style="width:15%" />
+									<col style="width:15%" />
+									<col style="width:15%" />
+									<col style="width:15%" />
+									<col style="width:auto" />
+									<col style="width:auto" />
+							 </colgroup>
+							 <tr>
+									<th>1 Depth</th>
+									<th>2 Depth</th>
+									<th>3 Depth</th>
+									<th>4 Depth</th>
+									<th>링크</th>
+									<th>설명</th>
+									<th>작업자</th>
+							 </tr>
+							<tr class="menu_line">
+									<td>메인</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td class="link"><a href="main.html" target="_blank">main.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="menu_line end">
+									<td>회사소개</td>
+									<td>회사소개</td>
+									<td>회사 개요</td>
+									<td></td>
+									<td class="link"><a href="sub_01_01_01_info.html" target="_blank">sub_01_01_01_info.html</a></td>
+									<td class="etc"></td>
+									<td>박유진</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>CEO 인사말</td>
+									<td></td>
+									<td class="link"><a href="sub_01_01_02_ceo.html" target="_blank">sub_01_01_02_ceo.html</a></td>
+									<td class="etc"></td>
+									<td>박유진</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>연혁</td>
+									<td></td>
+									<td class="link"><a href="sub_01_01_03_history.html" target="_blank">sub_01_01_03_history.html</a></td>
+									<td class="etc"></td>
+									<td>박유진</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>기업문화</td>
+									<td></td>
+									<td class="link"><a href="sub_01_01_04_culture.html" target="_blank">sub_01_01_04_culture.html</a></td>
+									<td class="etc"></td>
+									<td>박유진</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>CI</td>
+									<td></td>
+									<td class="link"><a href="sub_01_01_05_ci.html" target="_blank">sub_01_01_05_ci.html</a></td>
+									<td class="etc"></td>
+									<td>박유진</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>조직도</td>
+									<td></td>
+									<td class="link"><a href="sub_01_01_06_group.html" target="_blank">sub_01_01_06_group.html</a></td>
+									<td class="etc"></td>
+									<td>박유진</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td>주주 정보</td>
+									<td></td>
+									<td></td>
+									<td class="link"><a href="sub_01_02_stockholder_info.html" target="_blank">sub_01_02_stockholder_info.html</a></td>
+									<td class="etc"></td>
+									<td>박유진</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td>찾아오시는 길</td>
+									<td></td>
+									<td></td>
+									<td class="link"><a href="sub_01_02_map.html" target="_blank">sub_01_02_map.html</a></td>
+									<td class="etc"></td>
+									<td>박유진</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td>공지</td>
+									<td>목록</td>
+									<td></td>
+									<td class="link"><a href="sub_01_04_notice_list.html" target="_blank">sub_01_04_notice_list.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>보기</td>
+									<td></td>
+									<td class="link"><a href="sub_01_04_notice_view.html" target="_blank">sub_01_04_notice_view.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>상세</td>
+									<td></td>
+									<td class="link"><a href="sub_01_04_notice_write.html" target="_blank">sub_01_04_notice_write.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="menu_line end">
+									<td>생산제품</td>
+									<td>알루미늄 압연</td>
+									<td></td>
+									<td></td>
+									<td class="link"><a href="sub_02_01_aluminium.html" target="_blank">sub_02_01_aluminium.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td>생산공정</td>
+									<td>주조</td>
+									<td></td>
+									<td class="link"><a href="sub_02_02_01_remelt.html" target="_blank">sub_02_02_01_remelt.html</a></td>
+									<td class="etc"></td>
+									<td>박유진</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>열연</td>
+									<td></td>
+									<td class="link"><a href="sub_02_02_02_hotmill.html" target="_blank">sub_02_02_02_hotmill.html</a></td>
+									<td class="etc"></td>
+									<td>박유진</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>냉연</td>
+									<td></td>
+									<td class="link"><a href="sub_02_02_03_coldmill.html" target="_blank">sub_02_02_03_coldmill.html</a></td>
+									<td class="etc"></td>
+									<td>박유진</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>제품</td>
+									<td></td>
+									<td class="link"><a href="sub_02_02_04_Finishing.html" target="_blank">sub_02_02_04_Finishing.html</a></td>
+									<td class="etc"></td>
+									<td>박유진</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td>생산공정영상</td>
+									<td></td>
+									<td></td>
+									<td class="link"><a href="sub_02_03_video.html" target="_blank">sub_02_03_video.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="menu_line end">
+									<td>지속가능성</td>
+									<td>지속가능 경영</td>
+									<td></td>
+									<td></td>
+									<td class="link"><a href="sub_03_01_sustain.html" target="_blank">sub_03_01_sustain.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td>E-H-S</td>
+									<td></td>
+									<td></td>
+									<td class="link"><a href="sub_03_02_ehs.html" target="_blank">sub_03_02_ehs.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td>윤리경영</td>
+									<td></td>
+									<td></td>
+									<td class="link"><a href="sub_03_03_ethics.html" target="_blank">sub_03_03_ethics.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td>기술,품질 경영</td>
+									<td></td>
+									<td></td>
+									<td class="link"><a href="sub_03_04_tech.html" target="_blank">sub_03_04_tech.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td>사회공헌</td>
+									<td></td>
+									<td></td>
+									<td class="link"><a href="sub_03_05_society.html" target="_blank">sub_03_05_society.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="menu_line end">
+									<td>인재채용</td>
+									<td>회사 생활</td>
+									<td>직무 소개</td>
+									<td></td>
+									<td class="link"><a href="sub_04_01_01_task_info.html" target="_blank">sub_04_01_01_task_info.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>(팝업)__직무인터뷰</td>
+									<td class="link"><a href="sub_04_01_01_task_info_popup.html" target="_blank">sub_04_01_01_task_info_popup.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>인사제도 및 복리후생</td>
+									<td></td>
+									<td class="link"><a href="sub_04_01_02_personnel_system.html" target="_blank">sub_04_01_02_personnel_system.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td>입사지원 가이드</td>
+									<td>전형 절차</td>
+									<td></td>
+									<td class="link"><a href="sub_04_02_01_process.html" target="_blank">sub_04_02_01_process.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>지원방법</td>
+									<td></td>
+									<td class="link"><a href="sub_04_02_02_method.html" target="_blank">sub_04_02_02_method.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td>채용 정보</td>
+									<td>채용 공고</td>
+									<td>목록</td>
+									<td class="link"><a href="sub_04_03_01_apply_list.html" target="_blank">sub_04_03_01_apply_list.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>보기</td>
+									<td class="link"><a href="sub_04_03_01_apply_view.html" target="_blank">sub_04_03_01_apply_view.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>나의 지원서</td>
+									<td>약관동의</td>
+									<td class="link"><a href="sub_04_03_02_agree.html" target="_blank">sub_04_03_02_agree.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>본인인증</td>
+									<td class="link"><a href="sub_04_03_02_confirm.html" target="_blank">sub_04_03_02_confirm.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>정보입력_기본인적사항</td>
+									<td class="link"><a href="sub_04_03_02_step01.html" target="_blank">sub_04_03_02_step01.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>정보입력_기본인적사항_(작성완료)</td>
+									<td class="link"><a href="sub_04_03_02_step01_finish.html" target="_blank">sub_04_03_02_step01_finish.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>정보입력_학력사항</td>
+									<td class="link"><a href="sub_04_03_02_step02.html" target="_blank">sub_04_03_02_step02.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>정보입력_학력사항_(작성완료)</td>
+									<td class="link"><a href="sub_04_03_02_step02_finish.html" target="_blank">sub_04_03_02_step02_finish.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>정보입력_외국어/자격증</td>
+									<td class="link"><a href="sub_04_03_02_step03.html" target="_blank">sub_04_03_02_step03.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>정보입력_외국어/자격증_(작성완료)</td>
+									<td class="link"><a href="sub_04_03_02_step03_finish.html" target="_blank">sub_04_03_02_step03_finish.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>정보입력_경력사항</td>
+									<td class="link"><a href="sub_04_03_02_step04.html" target="_blank">sub_04_03_02_step04.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>정보입력_경력사항_(작성완료)</td>
+									<td class="link"><a href="sub_04_03_02_step04_finish.html" target="_blank">sub_04_03_02_step04_finish.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>정보입력_자기소개서</td>
+									<td class="link"><a href="sub_04_03_02_step05.html" target="_blank">sub_04_03_02_step05.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>정보입력_자기소개서_(작성완료)</td>
+									<td class="link"><a href="sub_04_03_02_step05_finish.html" target="_blank">sub_04_03_02_step05_finish.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>(팝업)__주소찾기</td>
+									<td class="link"><a href="sub_04_03_02_popup_addr_find.html" target="_blank">sub_04_03_02_popup_addr_find.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>제출완료</td>
+									<td class="link"><a href="sub_04_03_02_step_finish.html" target="_blank">sub_04_03_02_step_finish.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td>나의 지원 현황</td>
+									<td>본인인증</td>
+									<td class="link"><a href="sub_04_03_03_confirm.html" target="_blank">sub_04_03_03_confirm.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>목록</td>
+									<td class="link"><a href="sub_04_03_03_mylist.html" target="_blank">sub_04_03_03_mylist.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>상세__작성중</td>
+									<td class="link"><a href="sub_04_03_03_mystep_01.html" target="_blank">sub_04_03_03_mystep_01.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>상세__작성 중 공고마감</td>
+									<td class="link"><a href="sub_04_03_03_mystep_02.html" target="_blank">sub_04_03_03_mystep_02.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>상세__제출완료</td>
+									<td class="link"><a href="sub_04_03_03_mystep_03.html" target="_blank">sub_04_03_03_mystep_03.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>(팝업)__인쇄미리보기</td>
+									<td class="link"><a href="sub_04_03_03_popup_print.html" target="_blank">sub_04_03_03_popup_print.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>(팝업)__결과보기-합격</td>
+									<td class="link"><a href="sub_04_03_03_popup_result_pass.html" target="_blank">sub_04_03_03_popup_result_pass.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>(팝업)__결과보기-불합격</td>
+									<td class="link"><a href="sub_04_03_03_popup_result_fail.html" target="_blank">sub_04_03_03_popup_result_fail.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td>개인정보처리방침</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td class="link"><a href="popup_privacy_policy.html" target="_blank">popup_privacy_policy.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td>사이트맵</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td class="link"><a href="popup_sitemap.html" target="_blank">popup_sitemap.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+							 <tr class="end">
+									<td>임시페이지</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td class="link"><a href="sub_temporary_page.html" target="_blank">sub_temporary_page.html</a></td>
+									<td class="etc"></td>
+									<td>이근호</td>
+							 </tr>
+						</table>
+				 </dd>
+			</dl>
+	 </div>
+
+</body>
+</html>
